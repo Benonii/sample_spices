@@ -20,10 +20,9 @@
 
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@assets/*": ["../frontend/src/assets/*"]
+      "@/*": ["src/*"]
     },
     "types": ["bun"]
   },
-  "include": ["src", "src/types"]
+  "include": ["src"]
 }

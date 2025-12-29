@@ -1,6 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
-import SignupPage from '@/pages/Signup'
+import Signup from '@/pages/Signup'
 
+// @ts-ignore - during editor typecheck without the Vite plugin, this generic is undefined
 export const Route = createFileRoute('/signup')({
-  component: SignupPage,
-});
+  component: Signup,
+})

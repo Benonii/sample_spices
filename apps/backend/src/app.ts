@@ -6,6 +6,14 @@ import { cors } from "hono/cors";
 import { Hono } from "hono";
 import { env } from "@/utils/env";
 import { auth } from "./utils/auth";
+import productRouter from "./product";
+import adminRouter from "./admin";
+import uploadRouter from "./admin/upload";
+import addressRouter from "./address";
+import orderRouter from "./order";
+import cartRouter from "./cart";
+import reviewRouter from "./review";
+
 const app = new Hono();
 
 app.use("*", cors({
@@ -29,5 +37,12 @@ routes.forEach((route) => {
 
 app.on(["POST", "GET"], "/api/auth/**", (c) =>  auth.handler(c.req.raw));
 
-export type AppType = typeof app;
+app.route("/api/product", productRouter);
+app.route("/api/admin", adminRouter);
+app.route("/api/upload", uploadRouter);
+app.route("/api/address", addressRouter);
+app.route("/api/order", orderRouter);
+app.route("/api/cart", cartRouter);
+app.route("/api/review", reviewRouter);
+
 export default app;

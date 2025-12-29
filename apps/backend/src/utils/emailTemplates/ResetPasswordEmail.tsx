@@ -1,4 +1,5 @@
-import Logo from "@assets/logo.png"
+import React from "react";
+import Logo from "./driptech.png"
 
 type ResetPasswordEmailProps = {
   name?: string;
@@ -37,14 +38,14 @@ export const ResetPasswordEmail: React.FC<ResetPasswordEmailProps> = ({ name, ur
                         display: "inline-block",
                         marginBottom: "16px"
                     }}>
-                       /*  <img 
+                        <img 
                             src={Logo} 
                             alt="Drip Tech Logo" 
                             style={{
                                 height: "48px",
                                 width: "auto"
                             }}
-                        /> */
+                        />
                     </div>
                     <h1 style={{ 
                         color: "#171717", 
@@ -111,18 +112,6 @@ export const ResetPasswordEmail: React.FC<ResetPasswordEmailProps> = ({ name, ur
                             target.style.boxShadow = "0 6px 16px rgba(220, 38, 38, 0.3)";
                         }}
                         onMouseOut={(e) => {
-                            const target = e.currentTarget as any;
-                            target.style.backgroundColor = "#dc2626";
-                            target.style.transform = "translateY(0)";
-                            target.style.boxShadow = "0 4px 12px rgba(220, 38, 38, 0.25)";
-                        }}
-                        onFocus={(e) => {
-                            const target = e.currentTarget as any;
-                            target.style.backgroundColor = "#b91c1c";
-                            target.style.transform = "translateY(-1px)";
-                            target.style.boxShadow = "0 6px 16px rgba(220, 38, 38, 0.3)";
-                        }}
-                        onBlur={(e) => {
                             const target = e.currentTarget as any;
                             target.style.backgroundColor = "#dc2626";
                             target.style.transform = "translateY(0)";
@@ -245,11 +234,10 @@ export const ResetPasswordEmail: React.FC<ResetPasswordEmailProps> = ({ name, ur
                         color: "#9ca3af",
                         margin: "0"
                     }}>
-                        © 2025 Starter Template.
+                        © 2025 Drip Tech. Premium Tech & Fashion.
                     </p>
                 </div>
             </div>
         </div>
     );
 };
-

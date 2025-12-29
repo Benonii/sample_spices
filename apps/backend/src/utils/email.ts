@@ -4,6 +4,7 @@ import { ResetPasswordEmail } from "./emailTemplates/ResetPasswordEmail";
 
 const resend = new Resend(process.env.RESEND_API_KEY as string);
 
+
 export async function sendVerificationEmail(name: string, email: string, url: string, token: string) {
     const { data, error } =  await resend.emails.send({
         from: process.env.FROM_EMAIL || "",

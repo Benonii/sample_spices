@@ -1,0 +1,1 @@
+ALTER TABLE "review" ALTER COLUMN "rating" SET DATA TYPE numeric;

@@ -1,4 +1,3 @@
-// biome-ignore assist/source/organizeImports: can't make Biome happy
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -11,47 +10,41 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { type NewPasswordInput, newPasswordSchema } from "@backend/utils/schemas";
-import { type SubmitHandler, useForm } from 'react-hook-form';
+import { NewPasswordFormData, newPasswordSchema } from "@/lib/types";
+import { SubmitHandler, useForm } from 'react-hook-form';
 import { toast } from "sonner";
-import useStore from "@/lib/store";
+import { useState } from "react";
 import { Link, useSearch } from '@tanstack/react-router';
 import { authClient } from "@/lib/authClient";
-import { Lock, CheckCircle, AlertCircle, ArrowLeft, Eye, EyeOff } from "lucide-react";
 
 export function ResetPasswordForm({
   className,
   ...props
 }: React.ComponentProps<"div">) {
-  const search = useSearch({ strict: false });
-  // biome-ignore lint/suspicious/noExplicitAny: token is a string
-  const token = (search as any)?.token;
+  const { token } = useSearch({ from: '/reset-password' });
   
   const {
     handleSubmit,
     register,
     formState: { errors },
     watch,
-  } = useForm<NewPasswordInput>({
+  } = useForm<NewPasswordFormData>({
     resolver: zodResolver(newPasswordSchema)
   });
-  const {
-    resetPasswordPending, setResetPasswordPending,
-    passwordReset, setPasswordReset, showPassword,
-    setShowPassword, showConfirmPassword, setShowConfirmPassword
-  } = useStore();
+  const [isPending, setIsPending] = useState(false);
+  const [isPasswordReset, setIsPasswordReset] = useState(false);
   
   // Watch password fields for real-time validation
-  const newPassword = watch("password");
+  const newPassword = watch("newPassword");
   const confirmPassword = watch("confirmPassword");
 
-  const onSubmit: SubmitHandler<NewPasswordInput> = async (data) => {
+  const onSubmit: SubmitHandler<NewPasswordFormData> = async (data) => {
     try {
-      setResetPasswordPending(true);
-      const { password, confirmPassword } = data;
+      setIsPending(true);
+      const { newPassword, confirmPassword } = data;
       
       // Validate passwords match
-      if (password !== confirmPassword) {
+      if (newPassword !== confirmPassword) {
         toast.error("Passwords do not match!");
         return;
       }
@@ -72,45 +65,34 @@ export function ResetPasswordForm({
         return
       }
       
-      setPasswordReset(true);
+      setIsPasswordReset(true);
       toast.success("Password reset successfully!");
     } catch (error) {
       console.error("=====++ERROR RESETTING PASSWORD========\n", error);
       toast.error("Error resetting password!");
     } finally {
-      setResetPasswordPending(false);
+      setIsPending(false);
     }
   };
 
   // Show error if no token is provided
   if (!token) {
     return (
-      <div className={cn("flex flex-col gap-6 container-custom", className)} {...props}>
-        <Card className="w-full max-w-lg mx-auto card-shadow">
-          <CardHeader className="text-center space-y-4">
-            <div className="mx-auto w-16 h-16 bg-ethiopian-red/10 rounded-full flex items-center justify-center">
-              <AlertCircle className="w-8 h-8 text-ethiopian-red" />
-            </div>
-            <CardTitle className="heading-3 text-ethiopian-red">Invalid Reset Link</CardTitle>
-            <CardDescription className="body-text-sm">
-              This password reset link is invalid or has expired. Please request a new one to continue.
+      <div className={cn("flex flex-col gap-6", className)} {...props}>
+        <Card className="w-full max-w-md mx-auto">
+          <CardHeader className="text-center">
+            <CardTitle className="text-xl">Invalid Reset Link</CardTitle>
+            <CardDescription>
+              This password reset link is invalid or has expired. Please request a new one.
             </CardDescription>
           </CardHeader>
-          <CardContent className="space-y-6">
-            <Button asChild className="w-full h-12 text-base font-semibold btn-primary rounded-lg">
-              <Link to="/login" className="inline-flex items-center gap-2">
-                <ArrowLeft className="w-4 h-4" />
-                Back to login
-              </Link>
-            </Button>
-            <div className="text-center body-text-sm">
-              Need a new reset link?{" "}
-              <Link 
-                to="/forgot-password" 
-                className="text-ethiopian-green hover:text-ethiopian-green/80 underline underline-offset-4 font-medium transition-colors"
-              >
-                Request password reset
-              </Link>
+          <CardContent>
+            <div className="grid gap-6">
+              <Button asChild className="w-full">
+                <Link to="/login">
+                  Back to login
+                </Link>
+              </Button>
             </div>
           </CardContent>
         </Card>
@@ -118,26 +100,24 @@ export function ResetPasswordForm({
     );
   }
 
-  if (passwordReset) {
+  if (isPasswordReset) {
     return (
-      <div className={cn("flex flex-col gap-6 container-custom", className)} {...props}>
-        <Card className="w-full max-w-lg mx-auto card-shadow">
-          <CardHeader className="text-center space-y-4">
-            <div className="mx-auto w-16 h-16 rounded-full flex items-center justify-center bg-gray-200">
-              <CheckCircle className="w-8 h-8" />
-            </div>
-            <CardTitle className="heading-3">Password Reset Successful</CardTitle>
-            <CardDescription className="body-text-sm">
+      <div className={cn("flex flex-col gap-6", className)} {...props}>
+        <Card className="w-full max-w-md mx-auto">
+          <CardHeader className="text-center">
+            <CardTitle className="text-xl">Password reset successful</CardTitle>
+            <CardDescription>
               Your password has been successfully updated. You can now log in with your new password.
             </CardDescription>
           </CardHeader>
-          <CardContent className="space-y-6">
-            <Button asChild variant="outline" className="w-full h-12 font-semibold  text-gray-800 hover:bg-gray-700 hover:text-white rounded-lg">
-              <Link to="/login" className="inline-flex items-center gap-2">
-                <ArrowLeft className="w-4 h-4" />
-                Continue to login
-              </Link>
-            </Button>
+          <CardContent>
+            <div className="grid gap-6">
+              <Button asChild className="w-full">
+                <Link to="/login">
+                  Continue to login
+                </Link>
+              </Button>
+            </div>
           </CardContent>
         </Card>
       </div>
@@ -145,125 +125,65 @@ export function ResetPasswordForm({
   }
 
   return (
-    <div className={cn("flex flex-col gap-6 container-custom", className)} {...props}>
-      <Card className="w-full max-w-lg mx-auto card-shadow">
-        <CardHeader className="text-center space-y-4">
-          <div className="mx-auto w-16 h-16 rounded-full flex items-center justify-center bg-gray-200">
-            <Lock className="w-8 h-8" />
-          </div>
-          <CardTitle className="heading-3">Set New Password</CardTitle>
-          <CardDescription className="body-text-sm">
-            Create a strong password to secure your account
+    <div className={cn("flex flex-col gap-6", className)} {...props}>
+      <Card className="w-full max-w-md mx-auto">
+        <CardHeader className="text-center">
+          <CardTitle className="text-xl">Set new password</CardTitle>
+          <CardDescription>
+            Enter your new password below
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-            <div className="space-y-2">
-              <Label htmlFor="newPassword" className="text-sm font-medium text-foreground">
-                New Password
-              </Label>
-              <div className="relative">
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <div className="grid gap-6">
+              <div className="grid gap-3">
+                <Label htmlFor="newPassword">New Password</Label>
                 <Input
-                  id={"newPassword"}
-                  type={showPassword ? "text" : "password"}
-                  placeholder="Enter your new password"
-                  className="h-12 text-base border-2 border-input focus:border-ethiopian-green focus:ring-2 focus:ring-ethiopian-green/20 transition-all duration-200 pr-12"
-                  {...register("password")}
+                  id="newPassword"
+                  type="password"
+                  placeholder="Enter new password"
+                  {...register("newPassword")}
                   required
                 />
-                <Button
-                  variant="ghost"
-                  onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2"
-                >
-                  {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
-                </Button>
+                {errors.newPassword && (
+                  <p className="text-sm text-red-500">{errors.newPassword.message}</p>
+                )}
               </div>
-            </div>
-            
-            <div className="space-y-2">
-              <Label htmlFor="confirmPassword" className="text-sm font-medium text-foreground">
-                Confirm New Password
-              </Label>
-              <div className="relative">
+              <div className="grid gap-3">
+                <Label htmlFor="confirmPassword">Confirm New Password</Label>
                 <Input
-                  id={"confirmPassword"}
-                  type={showConfirmPassword ? "text" : "password"}
-                  placeholder="Confirm your new password"
-                  className="h-12 text-base border-2 border-input focus:border-ethiopian-green focus:ring-2 focus:ring-ethiopian-green/20 transition-all duration-200 pr-12"
+                  id="confirmPassword"
+                  type="password"
+                  placeholder="Confirm new password"
                   {...register("confirmPassword")}
                   required
                 />
-                <Button
-                  variant="ghost"
-                  onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2"
-                >
-                  {showConfirmPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
-                </Button>
+                {errors.confirmPassword && (
+                  <p className="text-sm text-red-500">{errors.confirmPassword.message}</p>
+                )}
+                {confirmPassword && newPassword && confirmPassword !== newPassword && (
+                  <p className="text-sm text-red-500">Passwords do not match</p>
+                )}
+                {confirmPassword && newPassword && confirmPassword === newPassword && (
+                  <p className="text-sm text-green-500">Passwords match</p>
+                )}
               </div>
-              {errors.confirmPassword && (
-                <p className="text-sm text-ethiopian-red flex items-center gap-1">
-                  <span className="w-1 h-1 bg-ethiopian-red rounded-full"></span>
-                  {errors.confirmPassword.message}
-                </p>
-              )}
-              {confirmPassword && newPassword && confirmPassword !== newPassword && (
-                <p className="text-sm text-ethiopian-red flex items-center gap-1">
-                  <span className="w-1 h-1 bg-ethiopian-red rounded-full"></span>
-                  Passwords do not match
-                </p>
-              )}
-              {confirmPassword && newPassword && confirmPassword === newPassword && (
-                <p className="text-sm text-ethiopian-green flex items-center gap-1">
-                  <CheckCircle className="w-4 h-4" />
-                  Passwords match
-                </p>
-              )}
-            </div>
-            
-            <Button 
-              type="submit" 
-              className="w-full h-12 text-base font-semibold bg-gray-800 text-white hover:bg-gray-700 rounded-lg transition-all duration-200 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed hover:cursor-pointer"
-              disabled={resetPasswordPending}
-            >
-              {resetPasswordPending ? (
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-                  Updating password...
-                </div>
-              ) : (
-                <div className="flex items-center gap-2">
-                  <Lock className="w-4 h-4" />
-                  Update password
-                </div>
-              )}
-            </Button>
-            
-            <div className="text-center body-text-sm">
-              Remember your password?{" "}
-              <Link 
-                to="/login" 
-                className="underline underline-offset-4 font-medium transition-colors inline-flex items-center gap-1"
-              >
-                <ArrowLeft className="w-4 h-4" />
-                Back to login
-              </Link>
+              <Button type="submit" className="w-full" disabled={isPending}>
+                {isPending ? "Updating..." : "Update password"}
+              </Button>
+              <div className="text-center text-sm">
+                Remember your password?{" "}
+                <Link to="/login" className="underline underline-offset-4">
+                  Back to login
+                </Link>
+              </div>
             </div>
           </form>
         </CardContent>
       </Card>
-      
-      <div className="text-muted-foreground text-center text-xs text-balance max-w-lg mx-auto">
-        By updating your password, you agree to our{" "}
-        <Link to="/" className="text-ethiopian-green hover:text-ethiopian-green/80 underline underline-offset-4">
-          Terms of Service
-        </Link>{" "}
-        and{" "}
-        <Link to="/" className="text-ethiopian-green hover:text-ethiopian-green/80 underline underline-offset-4">
-          Privacy Policy
-        </Link>
-        .
+      <div className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4">
+        By clicking continue, you agree to our <a href="#">Terms of Service</a>{" "}
+        and <a href="#">Privacy Policy</a>.
       </div>
     </div>
   );
