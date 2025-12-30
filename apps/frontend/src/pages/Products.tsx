@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { getProducts } from '@/lib/api';
-import { ProductCard, SearchBar, FilterBar, Pagination } from '@/components';
+import { ProductCard, ProductCardSkeleton, SearchBar, FilterBar, Pagination } from '@/components';
 import type { ProductQueryParams } from '@/lib/types';
-import { Loader2, AlertCircle } from 'lucide-react';
+import { AlertCircle } from 'lucide-react';
 import { useCart } from '@/hooks/useCart';
 import { authClient } from '@/lib/authClient';
 import { toast } from 'sonner';
@@ -62,7 +62,7 @@ export default function Products() {
     }
 
     setLoadingProductId(product.id);
-    
+
     try {
       await addItemToCart(product.id, 1);
       toast.success(`${product.name} added to cart successfully`);
@@ -81,7 +81,7 @@ export default function Products() {
     }
 
     setLoadingProductId(product.id);
-    
+
     try {
       if (action === 'add') {
         await addItemToCart(product.id, 1);
@@ -127,12 +127,15 @@ export default function Products() {
   return (
     <div className="min-h-screen pt-10">
       {/* Header */}
-      <div className="bg-card">
-        <div className="mx-auto w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] px-3 sm:px-4 md:px-6 lg:px-4 py-8">
-          <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">
-            Our Spices
-          </h1>
-          <p className="text-base sm:text-lg text-muted-foreground">
+      <div className="glass dark:glass-dark border-b border-orange-200/50 dark:border-orange-500/30">
+        <div className="mx-auto w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] px-3 sm:px-4 md:px-6 lg:px-4 py-10">
+          <div className="flex items-center space-x-4 mb-2">
+            <div className="h-1 w-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></div>
+            <h1 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+              Our Spices
+            </h1>
+          </div>
+          <p className="text-base sm:text-lg text-muted-foreground pl-16">
             Discover authentic Ethiopian spices and traditional blends
           </p>
         </div>
@@ -158,9 +161,10 @@ export default function Products() {
 
         {/* Loading State */}
         {isLoading && (
-          <div className="flex justify-center items-center py-12">
-            <Loader2 className="animate-spin h-8 w-8 text-primary" />
-            <span className="ml-2 text-muted-foreground">Loading spices...</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 sm:gap-6 mb-6 sm:mb-8">
+            {Array.from({ length: 8 }).map((_, i) => (
+              <ProductCardSkeleton key={i} />
+            ))}
           </div>
         )}
 

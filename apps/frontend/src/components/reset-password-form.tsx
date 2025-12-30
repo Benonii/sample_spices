@@ -22,7 +22,7 @@ export function ResetPasswordForm({
   ...props
 }: React.ComponentProps<"div">) {
   const { token } = useSearch({ from: '/reset-password' });
-  
+
   const {
     handleSubmit,
     register,
@@ -33,7 +33,7 @@ export function ResetPasswordForm({
   });
   const [isPending, setIsPending] = useState(false);
   const [isPasswordReset, setIsPasswordReset] = useState(false);
-  
+
   // Watch password fields for real-time validation
   const newPassword = watch("newPassword");
   const confirmPassword = watch("confirmPassword");
@@ -42,19 +42,19 @@ export function ResetPasswordForm({
     try {
       setIsPending(true);
       const { newPassword, confirmPassword } = data;
-      
+
       // Validate passwords match
       if (newPassword !== confirmPassword) {
         toast.error("Passwords do not match!");
         return;
       }
-      
+
       // Check if token exists
       if (!token) {
         toast.error("Invalid or missing reset token!");
         return;
       }
-      
+
       const { error } = await authClient.resetPassword({
         newPassword,
         token,
@@ -64,7 +64,7 @@ export function ResetPasswordForm({
         toast.error(error?.message || "Error occured resetting password!")
         return
       }
-      
+
       setIsPasswordReset(true);
       toast.success("Password reset successfully!");
     } catch (error) {
@@ -165,7 +165,7 @@ export function ResetPasswordForm({
                   <p className="text-sm text-red-500">Passwords do not match</p>
                 )}
                 {confirmPassword && newPassword && confirmPassword === newPassword && (
-                  <p className="text-sm text-green-500">Passwords match</p>
+                  <p className="text-sm text-orange-600">Passwords match</p>
                 )}
               </div>
               <Button type="submit" className="w-full" disabled={isPending}>

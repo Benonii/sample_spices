@@ -1,11 +1,11 @@
 import { Mail, ArrowLeft } from "lucide-react";
 import { Link } from '@tanstack/react-router';
-import { 
-  Card, 
-  CardContent, 
-  CardDescription, 
-  CardHeader, 
-  CardTitle 
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -15,8 +15,8 @@ export default function EmailVerificationPage() {
       <div className="w-full max-w-md">
         <Card className="border-neutral-200 shadow-sm">
           <CardHeader className="text-center pb-4">
-            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-50 border border-green-200">
-              <Mail className="h-8 w-8 text-green-600" />
+            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-orange-50 border border-orange-200">
+              <Mail className="h-8 w-8 text-orange-600" />
             </div>
             <CardTitle className="text-xl font-semibold text-neutral-900">
               Check Your Email
@@ -37,15 +37,15 @@ export default function EmailVerificationPage() {
                 <li>• Return here to sign in</li>
               </ul>
             </div>
-            
+
             <div className="text-center">
               <p className="text-xs text-neutral-500 mb-4">
                 Didn't receive the email? Check your spam folder or contact support.
               </p>
-              
+
               <Link to="/login">
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   className="w-full border-neutral-300 text-neutral-700 hover:bg-neutral-50 hover:border-neutral-400 transition-colors"
                 >
                   <ArrowLeft className="h-4 w-4 mr-2" />
@@ -55,11 +55,11 @@ export default function EmailVerificationPage() {
             </div>
           </CardContent>
         </Card>
-        
+
         <div className="mt-6 text-center">
           <p className="text-xs text-neutral-500">
             Need help? Contact our{" "}
-            <a href="#" className="text-green-600 hover:text-green-700 underline underline-offset-2">
+            <a href="#" className="text-orange-600 hover:text-orange-700 underline underline-offset-2">
               support team
             </a>
           </p>

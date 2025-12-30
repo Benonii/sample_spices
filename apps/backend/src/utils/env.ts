@@ -8,6 +8,8 @@ const EnvSchema = z.object({
   SUPABASE_URL: z.string(),
   SUPABASE_ANON_KEY: z.string(),
   SUPABASE_SERVICE_ROLE_KEY: z.string(),
+  STRIPE_SUCCESS_URL: z.string(),
+  STRIPE_CANCEL_URL: z.string()
 });
 
 type Env = z.infer<typeof EnvSchema>;
@@ -19,4 +21,6 @@ export const env: Env = EnvSchema.parse({
   SUPABASE_URL: process.env.SUPABASE_URL ?? "",
   SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY ?? "",
   SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY ?? "",
+  STRIPE_SUCCESS_URL: process.env.STRIPE_SUCCESS_URL ?? "",
+  STRIPE_CANCEL_URL: process.env.STRIPE_CANCEL_URL ?? "",
 });

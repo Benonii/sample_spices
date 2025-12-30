@@ -1,11 +1,11 @@
 import { useParams } from '@tanstack/react-router';
 import { useQuery } from '@tanstack/react-query';
-import { getProduct, getReviews, getCheckoutSession } from '@/lib/api';
+import { getProduct, getReviews, getCheckoutSession, getAddresses } from '@/lib/api';
 import { Button, ReviewForm, ReviewList } from '@/components';
 import type { Review } from '@/lib/types';
-import { 
-  Star, 
-  ShoppingCart, 
+import {
+  Star,
+  ShoppingCart,
   Loader2,
   AlertCircle,
   ArrowLeft,
@@ -20,7 +20,7 @@ import { useState } from 'react';
 export default function ProductDetail() {
   const { productId } = useParams({ from: '/product/$productId' });
   const [loading, setLoading] = useState(false);
-  
+
   const { data: sessionData } = authClient.useSession();
   const user = sessionData?.user;
   const { cartItems, addItemToCart, removeItemFromCart } = useCart(user?.id || null);
@@ -108,13 +108,34 @@ export default function ProductDetail() {
 
     setLoading(true);
     try {
-      const checkoutData = await getCheckoutSession([
-        {
-          productID: product.id,
-          quantity: 1
-        }
-      ]);
-      
+      // Fetch user addresses to find a default one
+      const addressResponse = await getAddresses(user.id);
+      const addresses = addressResponse.data;
+
+      if (!addresses || addresses.length === 0) {
+        toast.error('Please add a shipping address first');
+        return;
+      }
+
+      // Find default address or use the first one
+      const defaultAddress = addresses.find((addr: any) => addr.isDefault) || addresses[0];
+
+      if (!defaultAddress) {
+        toast.error('No valid address found');
+        return;
+      }
+
+      const checkoutData = await getCheckoutSession(
+        [
+          {
+            productID: product.id,
+            quantity: 1
+          }
+        ],
+        defaultAddress.id,
+        user.id
+      );
+
       // Redirect to Stripe checkout page
       if (checkoutData.data?.url) {
         window.location.href = checkoutData.data.url;
@@ -194,7 +215,7 @@ export default function ProductDetail() {
                 <img
                   src={product.images[0].imageUrl}
                   alt={product.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               ) : (
                 <div className="w-full h-full bg-gradient-to-br from-muted to-muted-foreground/20 flex items-center justify-center">
@@ -202,7 +223,7 @@ export default function ProductDetail() {
                 </div>
               )}
             </div>
-            
+
             {/* Image Gallery */}
             {product.images && product.images.length > 1 && (
               <div className="grid grid-cols-4 gap-2">
@@ -214,7 +235,7 @@ export default function ProductDetail() {
                     <img
                       src={image.imageUrl}
                       alt={`${product.name} ${i + 2}`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                   </div>
                 ))}
@@ -233,18 +254,18 @@ export default function ProductDetail() {
                 <div className="flex items-center space-x-1">
                   {(() => {
                     // Calculate average rating from reviews
-                    const averageRating = reviews?.data.list && reviews.data.list.length > 0 
+                    const averageRating = reviews?.data.list && reviews.data.list.length > 0
                       ? reviews.data.list.reduce((sum: number, review: Review) => {
-                          const rating = typeof review.rating === 'string' ? parseFloat(review.rating) : review.rating;
-                          return sum + (rating || 0);
-                        }, 0) / reviews.data.list.length
+                        const rating = typeof review.rating === 'string' ? parseFloat(review.rating) : review.rating;
+                        return sum + (rating || 0);
+                      }, 0) / reviews.data.list.length
                       : product.rating || 0;
-                    
+
                     return [...Array(5)].map((_, i) => {
                       const starValue = i + 1;
                       const isHalfStar = averageRating % 1 !== 0 && Math.ceil(averageRating) === starValue;
                       const isFullStar = averageRating >= starValue;
-                      
+
                       return (
                         <div key={i} className="relative">
                           {isHalfStar ? (
@@ -261,11 +282,10 @@ export default function ProductDetail() {
                             </>
                           ) : (
                             <Star
-                              className={`w-5 h-5 ${
-                                isFullStar
-                                  ? 'text-amber-600 fill-current'
-                                  : 'text-muted-foreground'
-                              }`}
+                              className={`w-5 h-5 ${isFullStar
+                                ? 'text-amber-600 fill-current'
+                                : 'text-muted-foreground'
+                                }`}
                             />
                           )}
                         </div>
@@ -274,11 +294,11 @@ export default function ProductDetail() {
                   })()}
                   <span className="text-sm text-muted-foreground ml-2">
                     ({(() => {
-                      const averageRating = reviews?.data.list && reviews.data.list.length > 0 
+                      const averageRating = reviews?.data.list && reviews.data.list.length > 0
                         ? reviews.data.list.reduce((sum: number, review: Review) => {
-                            const rating = typeof review.rating === 'string' ? parseFloat(review.rating) : review.rating;
-                            return sum + (rating || 0);
-                          }, 0) / reviews.data.list.length
+                          const rating = typeof review.rating === 'string' ? parseFloat(review.rating) : review.rating;
+                          return sum + (rating || 0);
+                        }, 0) / reviews.data.list.length
                         : product.rating || 0;
                       return averageRating.toFixed(1);
                     })()})
@@ -387,11 +407,10 @@ export default function ProductDetail() {
               <div className="space-y-3">
                 <div className="flex justify-between">
                   <span className="text-sm text-muted-foreground">Status:</span>
-                  <span className={`text-sm px-2 py-1 rounded-full ${
-                    product.status === 'ACTIVE' ? 'bg-green-100 text-green-800' : 
-                    product.status === 'INACTIVE' ? 'bg-yellow-100 text-yellow-800' : 
-                    'bg-red-100 text-red-800'
-                  }`}>
+                  <span className={`text-sm px-2 py-1 rounded-full ${product.status === 'ACTIVE' ? 'bg-green-100 text-green-800' :
+                    product.status === 'INACTIVE' ? 'bg-yellow-100 text-yellow-800' :
+                      'bg-red-100 text-red-800'
+                    }`}>
                     {product.status}
                   </span>
                 </div>
@@ -413,14 +432,14 @@ export default function ProductDetail() {
         </div>
 
         {/* Reviews Section */}
-          <div className="mt-16 border-t pt-12">
+        <div className="mt-16 border-t pt-12">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Review Form */}
             <div className="lg:col-span-1">
               <h2 className="text-2xl font-bold text-foreground mb-6">
                 Write a Review
               </h2>
-              
+
               <ReviewForm
                 productId={productId}
                 userReview={userReview ? {
@@ -441,7 +460,7 @@ export default function ProductDetail() {
                   </span>
                 )}
               </h2>
-              
+
               <ReviewList
                 productID={productId}
                 emptyMessage="No reviews yet. Be the first to review this product!"

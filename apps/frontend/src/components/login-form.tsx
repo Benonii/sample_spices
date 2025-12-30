@@ -49,7 +49,7 @@ export function LoginForm({
   const onSubmit: SubmitHandler<LoginFormData> = async (data) => {
     try {
       setIsPending(true)
-      const { email, password } =  data;
+      const { email, password } = data;
       await authClient.signIn.email({
         email,
         password,
@@ -70,10 +70,12 @@ export function LoginForm({
 
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
-      <Card className="w-full max-w-md mx-auto">
-        <CardHeader className="text-center">
-          <CardTitle className="text-xl">Welcome back</CardTitle>
-          <CardDescription>
+      <Card className="w-full max-w-md mx-auto glass-card dark:glass-card-dark border-em erald-200/50 dark:border-orange-500/20 shadow-2xl">
+        <CardHeader className="text-center space-y-3">
+          <CardTitle className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+            Welcome back
+          </CardTitle>
+          <CardDescription className="text-base">
             Sign in to continue exploring authentic Ethiopian spices
           </CardDescription>
         </CardHeader>
@@ -81,10 +83,10 @@ export function LoginForm({
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="grid gap-6">
               <div className="flex flex-col gap-4">
-                <Button 
+                <Button
                   type="button"
-                  variant="outline" 
-                  className="w-full"
+                  variant="outline"
+                  className="w-full border-orange-300/50 dark:border-orange-500/30 hover:bg-orange-50/50 dark:hover:bg-orange-950/30 hover:border-orange-400 dark:hover:border-orange-500/50 transition-all duration-300 hover:scale-105"
                   onClick={() => handleOAuthSignIn("google")}
                   disabled={isPending}
                 >
@@ -97,47 +99,58 @@ export function LoginForm({
                   {isPending ? "Loading..." : "Login with Google"}
                 </Button>
               </div>
-              <div className="after:border-border relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t">
+              <div className="after:border-border relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-orange-200/50 dark:after:border-orange-500/20">
                 <span className="bg-card text-muted-foreground relative z-10 px-2">
                   Or continue with
                 </span>
               </div>
               <div className="grid gap-6">
                 <div className="grid gap-3">
-                  <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="email" className="text-foreground/80">Email</Label>
                   <Input
                     id="email"
                     type="email"
                     placeholder="m@example.com"
                     {...register("email")}
+                    className="border-orange-200/50 dark:border-orange-500/30 focus:border-orange-500 dark:focus:border-orange-400 focus:ring-orange-500/20 transition-all duration-300"
                     required
                   />
                   {errors.email && (
-                    <p className="text-sm text-red-500">{errors.email.message}</p>
+                    <p className="text-sm text-red-500 dark:text-red-400">{errors.email.message}</p>
                   )}
                 </div>
                 <div className="grid gap-3">
                   <div className="flex items-center">
-                    <Label htmlFor="password">Password</Label>
+                    <Label htmlFor="password" className="text-foreground/80">Password</Label>
                     <Link
                       to="/request-password"
-                      className="ml-auto text-sm underline-offset-4 hover:underline"
+                      className="ml-auto text-sm text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-colors"
                     >
                       Forgot your password?
                     </Link>
                   </div>
-                  <Input id="password" type="password" required {...register("password")} />
+                  <Input
+                    id="password"
+                    type="password"
+                    className="border-orange-200/50 dark:border-orange-500/30 focus:border-orange-500 dark:focus:border-orange-400 focus:ring-orange-500/20 transition-all duration-300"
+                    required
+                    {...register("password")}
+                  />
                   {errors.password && (
-                      <p className="text-sm text-red-500">{errors.password.message}</p>
+                    <p className="text-sm text-red-500 dark:text-red-400">{errors.password.message}</p>
                   )}
                 </div>
-                <Button type="submit" className="w-full" disabled={isPending}>
+                <Button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  disabled={isPending}
+                >
                   {isPending ? "Loading..." : "Login"}
                 </Button>
               </div>
-              <div className="text-center text-sm">
+              <div className="text-center text-sm text-muted-foreground">
                 Don&apos;t have an account?{" "}
-                <Link to="/signup" className="underline underline-offset-4">
+                <Link to="/signup" className="text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 underline underline-offset-4 font-medium transition-colors">
                   Sign up
                 </Link>
               </div>
@@ -145,9 +158,9 @@ export function LoginForm({
           </form>
         </CardContent>
       </Card>
-      <div className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4">
-        By clicking continue, you agree to our <a href="#">Terms of Service</a>{" "}
-        and <a href="#">Privacy Policy</a>.
+      <div className="text-muted-foreground text-center text-xs text-balance">
+        By clicking continue, you agree to our <a href="#" className="text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 underline underline-offset-4 transition-colors">Terms of Service</a>{" "}
+        and <a href="#" className="text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 underline underline-offset-4 transition-colors">Privacy Policy</a>.
       </div>
     </div>
   )

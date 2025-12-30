@@ -2,797 +2,783 @@
 Failed to find Response internal state key
 Server running on port 5000
 <-- GET /api/auth/get-session
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 4s
-<-- GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 4s
-<-- GET /api/auth/get-session
-<-- GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC
---> GET /api/auth/get-session [32m200[0m 5s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/auth/get-session [32m200[0m 12s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
-<-- GET /api/auth/get-session
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 28s
---> GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC [32m200[0m 41s
-<-- GET /api/review?productID=33f6c7d1-81f2-4a51-9b33-6f0bdcb57423&_start=0&_end=10
-<-- GET /api/review?productID=88a9c741-0757-401a-8e0a-8337e07b1fb9&_start=0&_end=10
-<-- GET /api/review?productID=af7db4d4-7f53-4f58-9792-8017bf7d957b&_start=0&_end=10
-<-- GET /api/review?productID=a42209a4-17e3-4a39-b16c-29c5d36abcb8&_start=0&_end=10
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 28s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/review?productID=33f6c7d1-81f2-4a51-9b33-6f0bdcb57423&_start=0&_end=10 [32m200[0m 9s
-<-- GET /api/review?productID=defd0e8a-c520-4483-a804-04b6d3f96aab&_start=0&_end=10
---> GET /api/review?productID=88a9c741-0757-401a-8e0a-8337e07b1fb9&_start=0&_end=10 [32m200[0m 10s
-<-- GET /api/review?productID=289c7372-fc1f-4f28-8c43-3102ce5abc1e&_start=0&_end=10
---> GET /api/review?productID=af7db4d4-7f53-4f58-9792-8017bf7d957b&_start=0&_end=10 [32m200[0m 11s
-<-- GET /api/review?productID=2f4cec25-6b53-4ba4-a98e-d53ce781d390&_start=0&_end=10
---> GET /api/review?productID=a42209a4-17e3-4a39-b16c-29c5d36abcb8&_start=0&_end=10 [32m200[0m 11s
-<-- GET /api/review?productID=cf121238-7617-42ee-9a82-56ec7d2ae011&_start=0&_end=10
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 30s
-<-- GET /api/review?productID=c48dbb53-907f-4a21-a691-e5b69336184c&_start=0&_end=10
---> GET /api/auth/get-session [32m200[0m 30s
---> GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC [32m200[0m 59s
---> GET /api/review?productID=defd0e8a-c520-4483-a804-04b6d3f96aab&_start=0&_end=10 [32m200[0m 11s
-<-- GET /api/review?productID=22c95bd3-79b6-4c17-91eb-e8ca17625e2d&_start=0&_end=10
---> GET /api/review?productID=289c7372-fc1f-4f28-8c43-3102ce5abc1e&_start=0&_end=10 [32m200[0m 11s
-<-- GET /api/review?productID=f7543cd4-252e-49d7-9d08-a282fe0d574c&_start=0&_end=10
---> GET /api/review?productID=2f4cec25-6b53-4ba4-a98e-d53ce781d390&_start=0&_end=10 [32m200[0m 11s
-<-- GET /api/review?productID=bbd4eb1b-0868-4e79-8cb0-b08b671d6d6c&_start=0&_end=10
---> GET /api/review?productID=cf121238-7617-42ee-9a82-56ec7d2ae011&_start=0&_end=10 [32m200[0m 11s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 23s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 23s
---> GET /api/review?productID=c48dbb53-907f-4a21-a691-e5b69336184c&_start=0&_end=10 [32m200[0m 11s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/review?productID=22c95bd3-79b6-4c17-91eb-e8ca17625e2d&_start=0&_end=10 [32m200[0m 4s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/review?productID=f7543cd4-252e-49d7-9d08-a282fe0d574c&_start=0&_end=10 [32m200[0m 4s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/review?productID=bbd4eb1b-0868-4e79-8cb0-b08b671d6d6c&_start=0&_end=10 [32m200[0m 4s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 6s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 6s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 6s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 6s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 6s
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 1s
+--> GET /api/auth/get-session [32m200[0m 3s
 <-- GET /api/auth/get-session
 --> GET /api/auth/get-session [32m200[0m 1s
 <-- GET /api/auth/get-session
 --> GET /api/auth/get-session [32m200[0m 1s
 <-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 612ms
---> GET /api/admin/category?& [32m200[0m 878ms
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 748ms
---> GET /api/admin/category?& [32m200[0m 1s
 <-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 1s
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 1s
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 1s
-<-- GET /api/admin/product?_end=10&_start=0&
 <-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 646ms
---> GET /api/admin/category?& [32m200[0m 908ms
-<-- DELETE /api/admin/product/bbd4eb1b-0868-4e79-8cb0-b08b671d6d6c
---> DELETE /api/admin/product/bbd4eb1b-0868-4e79-8cb0-b08b671d6d6c [32m200[0m 662ms
-<-- GET /api/admin/product?_end=10&_start=0&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 564ms
-<-- DELETE /api/admin/product/f7543cd4-252e-49d7-9d08-a282fe0d574c
---> DELETE /api/admin/product/f7543cd4-252e-49d7-9d08-a282fe0d574c [32m200[0m 752ms
-<-- GET /api/admin/product?_end=10&_start=0&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 642ms
-<-- DELETE /api/admin/product/22c95bd3-79b6-4c17-91eb-e8ca17625e2d
---> DELETE /api/admin/product/22c95bd3-79b6-4c17-91eb-e8ca17625e2d [32m200[0m 607ms
-<-- GET /api/admin/product?_end=10&_start=0&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 702ms
-<-- DELETE /api/admin/product/c48dbb53-907f-4a21-a691-e5b69336184c
---> DELETE /api/admin/product/c48dbb53-907f-4a21-a691-e5b69336184c [32m200[0m 697ms
-<-- GET /api/admin/product?_end=10&_start=0&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 661ms
-<-- DELETE /api/admin/product/cf121238-7617-42ee-9a82-56ec7d2ae011
---> DELETE /api/admin/product/cf121238-7617-42ee-9a82-56ec7d2ae011 [32m200[0m 781ms
-<-- GET /api/admin/product?_end=10&_start=0&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 697ms
-<-- DELETE /api/admin/product/2f4cec25-6b53-4ba4-a98e-d53ce781d390
---> DELETE /api/admin/product/2f4cec25-6b53-4ba4-a98e-d53ce781d390 [32m200[0m 692ms
-<-- GET /api/admin/product?_end=10&_start=0&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 816ms
-<-- DELETE /api/admin/product/289c7372-fc1f-4f28-8c43-3102ce5abc1e
---> DELETE /api/admin/product/289c7372-fc1f-4f28-8c43-3102ce5abc1e [32m200[0m 817ms
-<-- GET /api/admin/product?_end=10&_start=0&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 611ms
-<-- DELETE /api/admin/product/defd0e8a-c520-4483-a804-04b6d3f96aab
---> DELETE /api/admin/product/defd0e8a-c520-4483-a804-04b6d3f96aab [32m200[0m 624ms
-<-- GET /api/admin/product?_end=10&_start=0&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 699ms
-<-- DELETE /api/admin/product/a42209a4-17e3-4a39-b16c-29c5d36abcb8
---> DELETE /api/admin/product/a42209a4-17e3-4a39-b16c-29c5d36abcb8 [32m200[0m 596ms
-<-- GET /api/admin/product?_end=10&_start=0&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 573ms
-<-- DELETE /api/admin/product/af7db4d4-7f53-4f58-9792-8017bf7d957b
---> DELETE /api/admin/product/af7db4d4-7f53-4f58-9792-8017bf7d957b [32m200[0m 555ms
-<-- GET /api/admin/product?_end=10&_start=0&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 548ms
-<-- DELETE /api/admin/product/88a9c741-0757-401a-8e0a-8337e07b1fb9
---> DELETE /api/admin/product/88a9c741-0757-401a-8e0a-8337e07b1fb9 [32m200[0m 845ms
-<-- GET /api/admin/product?_end=10&_start=0&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 692ms
-<-- DELETE /api/admin/product/33f6c7d1-81f2-4a51-9b33-6f0bdcb57423
---> DELETE /api/admin/product/33f6c7d1-81f2-4a51-9b33-6f0bdcb57423 [32m200[0m 634ms
-<-- GET /api/admin/product?_end=10&_start=0&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 573ms
-<-- GET /api/admin/category?&
---> GET /api/admin/category?& [32m200[0m 355ms
-<-- POST /api/upload/presigned_url
---> POST /api/upload/presigned_url [32m200[0m 2s
-<-- POST /api/admin/product
-==========Product inventory response==========
- []
-==========Product category response==========
- []
-==========Product image response==========
- []
---> POST /api/admin/product [32m200[0m 4s
-<-- GET /api/admin/category?&
-<-- GET /api/admin/product?_end=10&_start=0&
---> GET /api/admin/category?& [32m200[0m 364ms
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 728ms
-<-- GET /api/admin/category?&
---> GET /api/admin/category?& [32m200[0m 325ms
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 837ms
---> GET /api/admin/category?& [32m200[0m 1s
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 1s
-<-- GET /api/auth/get-session
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/auth/get-session [32m200[0m 2s
-<-- GET /api/auth/get-session
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 1s
+--> GET /api/admin/product?_end=10&_start=0& [32m200[0m 673ms
 --> GET /api/admin/category?& [32m200[0m 2s
 --> GET /api/auth/get-session [32m200[0m 2s
 <-- GET /api/auth/get-session
-<-- GET /api/auth/get-session
 --> GET /api/auth/get-session [32m200[0m 2s
---> GET /api/auth/get-session [32m200[0m 2s
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 1s
-<-- GET /api/auth/get-session
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/auth/get-session [32m200[0m 1s
-<-- GET /api/auth/get-session
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 1s
---> GET /api/admin/category?& [32m200[0m 1s
---> GET /api/auth/get-session [32m200[0m 2s
-<-- GET /api/admin/category?&
---> GET /api/admin/category?& [32m200[0m 451ms
-<-- POST /api/upload/presigned_url
---> POST /api/upload/presigned_url [32m200[0m 2s
-<-- POST /api/admin/product
-==========Product inventory response==========
- []
-==========Product category response==========
- []
-==========Product image response==========
- []
---> POST /api/admin/product [32m200[0m 4s
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 867ms
---> GET /api/admin/category?& [32m200[0m 1s
-<-- GET /api/admin/category?&
---> GET /api/admin/category?& [32m200[0m 269ms
-<-- GET /api/admin/category?&name_like=E
---> GET /api/admin/category?&name_like=E [32m200[0m 317ms
-<-- POST /api/upload/presigned_url
---> POST /api/upload/presigned_url [32m200[0m 1s
-<-- POST /api/admin/product
-==========Product inventory response==========
- []
-==========Product category response==========
- []
-==========Product image response==========
- []
---> POST /api/admin/product [32m200[0m 4s
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 776ms
---> GET /api/admin/category?& [32m200[0m 1s
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 1s
 <-- GET /api/auth/get-session
 <-- GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC
 --> GET /api/auth/get-session [32m200[0m 2s
 <-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 4s
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 22s
+--> GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC [32m200[0m 102s
 <-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC [32m200[0m 11s
+<-- GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10
+<-- GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10
+<-- GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10
+<-- GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10
+<-- GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10
+--> GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10 [32m200[0m 3s
+<-- GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10
+--> GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10 [32m200[0m 4s
+<-- GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10
+--> GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10 [32m200[0m 4s
 <-- GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10
+--> GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10 [32m200[0m 5s
 <-- GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10
+--> GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10 [32m200[0m 6s
 <-- GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10
 --> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 6s
+--> GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10 [32m200[0m 4s
+--> GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10 [32m200[0m 4s
+--> GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10 [32m200[0m 4s
+--> GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10 [32m200[0m 4s
+--> GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10 [32m200[0m 5s
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 2s
+<-- GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 3s
 <-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10 [32m200[0m 826ms
---> GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10 [32m200[0m 1s
---> GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10 [32m200[0m 2s
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 31s
+--> GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC [32m200[0m 44s
+<-- GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10
+<-- GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10
+<-- GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10
+<-- GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10
+<-- GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10
+<-- GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10
+--> GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10 [32m200[0m 610ms
+<-- GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10
+--> GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10 [32m200[0m 1s
+<-- GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10
+--> GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10 [32m200[0m 2s
+<-- GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10
+--> GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10 [32m200[0m 3s
+<-- GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10
+--> GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10 [32m200[0m 5s
+--> GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10 [32m200[0m 6s
+--> GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10 [32m200[0m 6s
+--> GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10 [32m200[0m 6s
+--> GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10 [32m200[0m 6s
+--> GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10 [32m200[0m 6s
+<-- POST /api/cart/checkout
+--> POST /api/cart/checkout [33m400[0m 9ms
+<-- POST /api/cart/checkout
+--> POST /api/cart/checkout [33m400[0m 4ms
+<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
+<-- GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
+--> GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 2s
+<-- GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
 --> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 3s
+--> GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 1s
+<-- POST /api/cart/checkout
+db0f1908-ecb2-4402-a166-9bebfd9acd66 addressID
+--> POST /api/cart/checkout [32m200[0m 6s
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 3s
 <-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 2s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
+<-- GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
+--> GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 2s
 --> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 3s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 2s
-<-- GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC&q=3
---> GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC&q=3 [32m200[0m 3s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
-<-- GET /api/product/164e7924-43f0-4d35-980e-91dc8525018d
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 2s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/product/164e7924-43f0-4d35-980e-91dc8525018d [32m200[0m 4s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 3s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 2s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 2s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/product?_start=0&_end=12&sortBy=price&orderBy=DESC
---> GET /api/product?_start=0&_end=12&sortBy=price&orderBy=DESC [32m200[0m 8s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 2s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 3s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
-<-- GET /api/product?_start=0&_end=12&sortBy=price&orderBy=ASC
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 3s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 4s
---> GET /api/product?_start=0&_end=12&sortBy=price&orderBy=ASC [32m200[0m 9s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 2s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 2s
-<-- GET /api/admin/category?&
---> GET /api/admin/category?& [32m200[0m 347ms
-<-- POST /api/upload/presigned_url
---> POST /api/upload/presigned_url [32m200[0m 2s
-<-- POST /api/admin/product
-==========Product inventory response==========
- []
-==========Product category response==========
- []
-==========Product image response==========
- []
---> POST /api/admin/product [32m200[0m 4s
-<-- GET /api/admin/category?&
-<-- GET /api/admin/product?_end=10&_start=0&
---> GET /api/admin/category?& [32m200[0m 358ms
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 665ms
-<-- GET /api/admin/category?&
---> GET /api/admin/category?& [32m200[0m 360ms
-<-- POST /api/upload/presigned_url
---> POST /api/upload/presigned_url [32m200[0m 1s
-<-- POST /api/upload/presigned_url
---> POST /api/upload/presigned_url [32m200[0m 787ms
-<-- POST /api/admin/product
-==========Product inventory response==========
- []
-==========Product category response==========
- []
-==========Product image response==========
- []
---> POST /api/admin/product [32m200[0m 4s
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 736ms
---> GET /api/admin/category?& [32m200[0m 1s
-<-- GET /api/admin/category?&
---> GET /api/admin/category?& [32m200[0m 283ms
-<-- POST /api/upload/presigned_url
---> POST /api/upload/presigned_url [32m200[0m 918ms
-<-- POST /api/admin/product
-==========Product inventory response==========
- []
-==========Product category response==========
- []
-==========Product image response==========
- []
---> POST /api/admin/product [32m200[0m 4s
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 700ms
---> GET /api/admin/category?& [32m200[0m 1s
-<-- GET /api/admin/category?&
---> GET /api/admin/category?& [32m200[0m 338ms
-<-- GET /api/admin/category?&name_like=E
---> GET /api/admin/category?&name_like=E [32m200[0m 423ms
-<-- POST /api/upload/presigned_url
---> POST /api/upload/presigned_url [32m200[0m 2s
-<-- POST /api/admin/product
-==========Product inventory response==========
- []
-==========Product category response==========
- []
-==========Product image response==========
- []
---> POST /api/admin/product [32m200[0m 4s
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 653ms
---> GET /api/admin/category?& [32m200[0m 956ms
-<-- GET /api/admin/category?&
---> GET /api/admin/category?& [32m200[0m 280ms
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 823ms
---> GET /api/admin/category?& [32m200[0m 1s
-<-- GET /api/admin/category?&
---> GET /api/admin/category?& [32m200[0m 319ms
-<-- POST /api/upload/presigned_url
---> POST /api/upload/presigned_url [32m200[0m 1s
-<-- POST /api/admin/product
-==========Product inventory response==========
- []
-==========Product category response==========
- []
-==========Product image response==========
- []
---> POST /api/admin/product [32m200[0m 4s
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 723ms
---> GET /api/admin/category?& [32m200[0m 1s
-<-- GET /api/admin/category?&
---> GET /api/admin/category?& [32m200[0m 370ms
-<-- POST /api/upload/presigned_url
---> POST /api/upload/presigned_url [32m200[0m 2s
-<-- POST /api/admin/product
-==========Product inventory response==========
- []
-==========Product category response==========
- []
-==========Product image response==========
- []
---> POST /api/admin/product [32m200[0m 4s
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 734ms
---> GET /api/admin/category?& [32m200[0m 1s
-<-- GET /api/admin/category?&
-[0m[33mTimeoutNegativeWarning[0m[2m:[0m [1m-20893.832370366435 is a negative number.
+<-- GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC
+--> GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC [32m200[0m 52s
+<-- GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10
+<-- GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10
+<-- GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10
+<-- GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10
+<-- GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10
+<-- GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10
+--> GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10 [32m200[0m 3s
+<-- GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10
+--> GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10 [32m200[0m 3s
+<-- GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10
+--> GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10 [32m200[0m 5s
+<-- GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10
+--> GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10 [32m200[0m 7s
+<-- GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10
+--> GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10 [32m200[0m 10s
+<-- POST /api/cart/checkout
+--> POST /api/cart/checkout [33m400[0m 2ms
+--> GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10 [32m200[0m 19s
+--> GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10 [32m200[0m 18s
+--> GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10 [32m200[0m 19s
+--> GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10 [32m200[0m 18s
+--> GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10 [32m200[0m 16s
+<-- GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10
+[0m[33mTimeoutNegativeWarning[0m[2m:[0m [1m-2259179.0706192944 is a negative number.
 Timeout duration was set to 1.[0m
 [0m      [2mat [0m[0m[1m[3mreconnect[0m[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/.pnpm/postgres@3.4.7/node_modules/postgres/src/connection.js[0m[2m:[0m[33m353[0m[2m:[33m5[0m[2m)[0m
 [0m      [2mat [0m[0m[1m[3mconnect[0m[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/.pnpm/postgres@3.4.7/node_modules/postgres/src/connection.js[0m[2m:[0m[33m113[0m[2m:[33m7[0m[2m)[0m
 [0m      [2mat [0m[0m[1m[3mconnect[0m[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/.pnpm/postgres@3.4.7/node_modules/postgres/src/index.js[0m[2m:[0m[33m393[0m[2m:[33m7[0m[2m)[0m
 [0m      [2mat [0m[0m[1m[3mhandle[0m[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/.pnpm/postgres@3.4.7/node_modules/postgres/src/query.js[0m[2m:[0m[33m140[0m[2m:[33m65[0m[2m)[0m
 
---> GET /api/admin/category?& [32m200[0m 3s
-<-- POST /api/upload/presigned_url
---> POST /api/upload/presigned_url [32m200[0m 2s
-<-- POST /api/admin/product
-==========Product inventory response==========
- []
-==========Product category response==========
- []
-==========Product image response==========
- []
---> POST /api/admin/product [32m200[0m 4s
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 699ms
---> GET /api/admin/category?& [32m200[0m 1s
-<-- GET /api/admin/category?&
---> GET /api/admin/category?& [32m200[0m 268ms
-<-- POST /api/upload/presigned_url
---> POST /api/upload/presigned_url [32m200[0m 1s
-<-- POST /api/admin/product
-==========Product inventory response==========
- []
-==========Product category response==========
- []
-==========Product image response==========
- []
---> POST /api/admin/product [32m200[0m 4s
-<-- POST /api/upload/presigned_url
---> POST /api/upload/presigned_url [32m200[0m 1s
-<-- POST /api/admin/product
-==========Product inventory response==========
- []
-==========Product category response==========
- []
-==========Product image response==========
- []
---> POST /api/admin/product [32m200[0m 4s
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 677ms
---> GET /api/admin/category?& [32m200[0m 1s
-<-- GET /api/admin/category?&
---> GET /api/admin/category?& [32m200[0m 399ms
-<-- POST /api/upload/presigned_url
---> POST /api/upload/presigned_url [32m200[0m 2s
-<-- POST /api/admin/product
-==========Product inventory response==========
- []
-==========Product category response==========
- []
-==========Product image response==========
- []
---> POST /api/admin/product [32m200[0m 4s
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 584ms
---> GET /api/admin/category?& [32m200[0m 870ms
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 627ms
---> GET /api/admin/category?& [32m200[0m 956ms
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 794ms
---> GET /api/admin/category?& [32m200[0m 1s
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 684ms
---> GET /api/admin/category?& [32m200[0m 962ms
-<-- GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10
-<-- GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10
-<-- GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10
-<-- GET /api/product?_start=0&_end=12&sortBy=price&orderBy=ASC
---> GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10 [32m200[0m 545ms
---> GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10 [32m200[0m 1s
---> GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10 [32m200[0m 2s
-<-- GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 17s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/product?_start=0&_end=12&sortBy=price&orderBy=ASC [32m200[0m 27s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 21s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC [32m200[0m 45s
-<-- GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10
-<-- GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10
-<-- GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10
-<-- GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10
-<-- GET /api/review?productID=2eebaebb-ec65-4a7a-a03d-4a60d337c317&_start=0&_end=10
---> GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10 [32m200[0m 1s
 <-- GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10
---> GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10 [32m200[0m 2s
 <-- GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10
---> GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10 [32m200[0m 3s
 <-- GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10
---> GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10 [32m200[0m 3s
 <-- GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10
---> GET /api/review?productID=2eebaebb-ec65-4a7a-a03d-4a60d337c317&_start=0&_end=10 [32m200[0m 4s
 <-- GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 11s
+<-- GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10
+<-- GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10
+<-- GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10
 <-- GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10
---> GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10 [32m200[0m 4s
 <-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10 [32m200[0m 4s
---> GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10 [32m200[0m 4s
---> GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10 [32m200[0m 4s
+<-- GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC
+--> GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10 [32m200[0m 7s
+--> GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10 [32m200[0m 8s
+--> GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10 [32m200[0m 9s
+--> GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10 [32m200[0m 10s
+--> GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10 [32m200[0m 17s
+--> GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10 [32m200[0m 19s
+--> GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10 [32m200[0m 15s
+<-- GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10
+<-- POST /api/cart/checkout
+--> POST /api/cart/checkout [33m400[0m 2ms
+--> GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10 [32m200[0m 15s
+<-- GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10
+--> GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10 [32m200[0m 16s
+<-- GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10
+--> GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10 [32m200[0m 17s
+<-- GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10
 --> GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10 [32m200[0m 4s
---> GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10 [32m200[0m 4s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 4s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 2s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 3s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 6s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 6s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 6s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 8s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 8s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 8s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 8s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 8s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 8s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 8s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
-<-- DELETE /api/admin/product/2eebaebb-ec65-4a7a-a03d-4a60d337c317
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 8s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> DELETE /api/admin/product/2eebaebb-ec65-4a7a-a03d-4a60d337c317 [32m200[0m 4s
-<-- GET /api/admin/product?_end=10&_start=0&
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 8s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 8s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 8s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 8s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 9s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 9s
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 5s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 6s
-<-- POST /api/auth/two-factor/enable
---> POST /api/auth/two-factor/enable [33m404[0m 1ms
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 706ms
---> GET /api/admin/category?& [32m200[0m 1s
-<-- GET /api/auth/get-session
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 2s
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/auth/get-session [32m200[0m 3s
-<-- GET /api/auth/get-session
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 1s
---> GET /api/admin/category?& [32m200[0m 2s
---> GET /api/auth/get-session [32m200[0m 2s
-<-- GET /api/auth/get-session
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 1s
---> GET /api/auth/get-session [32m200[0m 2s
-<-- GET /api/auth/get-session
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 2s
---> GET /api/auth/get-session [32m200[0m 2s
-<-- GET /api/auth/get-session
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 2s
-<-- GET /api/auth/get-session
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/auth/get-session [32m200[0m 2s
-<-- GET /api/auth/get-session
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 1s
---> GET /api/admin/category?& [32m200[0m 2s
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 2s
---> GET /api/admin/category?& [32m200[0m 3s
---> GET /api/auth/get-session [32m200[0m 4s
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 4s
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 2s
---> GET /api/auth/get-session [32m200[0m 2s
-<-- GET /api/auth/get-session
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 1s
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 2s
---> GET /api/auth/get-session [32m200[0m 2s
-<-- GET /api/auth/get-session
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 2s
---> GET /api/auth/get-session [32m200[0m 2s
-<-- GET /api/auth/get-session
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 2s
---> GET /api/auth/get-session [32m200[0m 2s
-<-- GET /api/auth/get-session
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 2s
---> GET /api/auth/get-session [32m200[0m 2s
-<-- GET /api/auth/get-session
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 1s
---> GET /api/auth/get-session [32m200[0m 2s
-<-- GET /api/auth/get-session
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 2s
---> GET /api/auth/get-session [32m200[0m 2s
-<-- GET /api/auth/get-session
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 1s
-<-- GET /api/auth/get-session
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 2s
---> GET /api/admin/category?& [32m200[0m 2s
---> GET /api/auth/get-session [32m200[0m 3s
-<-- GET /api/auth/get-session
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/auth/get-session [32m200[0m 3s
-<-- GET /api/auth/get-session
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 1s
---> GET /api/admin/category?& [32m200[0m 2s
---> GET /api/auth/get-session [32m200[0m 3s
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 3s
---> GET /api/auth/get-session [32m200[0m 2s
-[2J[3J[H[2J[3J[HFailed to find Response internal state key
-Server running on port 5000
-[2J[3J[H[2J[3J[HFailed to find Response internal state key
-Server running on port 5000
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 3s
-<-- GET /api/auth/get-session
-<-- GET /api/admin/product?_end=10&_start=0&
-<-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 1s
---> GET /api/admin/category?& [32m200[0m 1s
---> GET /api/auth/get-session [32m200[0m 2s
-<-- GET /api/auth/get-session
---> GET /api/auth/get-session [32m200[0m 1s
-<-- GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC
-<-- GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10
-<-- GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10
-<-- GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10
 <-- GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10
-<-- GET /api/review?productID=2eebaebb-ec65-4a7a-a03d-4a60d337c317&_start=0&_end=10
---> GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10 [32m200[0m 1s
-<-- GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10
---> GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10 [32m200[0m 2s
---> GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10 [32m200[0m 3s
-<-- GET /api/auth/get-session
-<-- GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC
---> GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10 [32m200[0m 3s
---> GET /api/review?productID=2eebaebb-ec65-4a7a-a03d-4a60d337c317&_start=0&_end=10 [32m200[0m 4s
---> GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10 [32m200[0m 4s
---> GET /api/auth/get-session [32m200[0m 12s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC [32m200[0m 36s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 22s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC [32m200[0m 48s
-<-- GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10
+--> GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10 [32m200[0m 4s
 <-- GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10
-<-- GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10
-<-- GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10
-<-- GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 15s
-<-- GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10
---> GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10 [32m200[0m 1s
-<-- GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10
---> GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10 [32m200[0m 2s
-<-- GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10
---> GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10 [32m200[0m 3s
-<-- GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10
---> GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10 [32m200[0m 3s
-<-- GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10
---> GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10 [32m200[0m 4s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10 [32m200[0m 4s
---> GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10 [32m200[0m 4s
 --> GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10 [32m200[0m 4s
+--> GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10 [32m200[0m 4s
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 21s
+--> GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10 [32m200[0m 6s
+--> GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10 [32m200[0m 6s
+--> GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC [32m200[0m 65s
+<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
+<-- GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10
+<-- GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10
+<-- GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10
+<-- GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10
+<-- GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10
+--> GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10 [32m200[0m 4s
+<-- GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10
+--> GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10 [32m200[0m 5s
+<-- GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10
+--> GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10 [32m200[0m 5s
+<-- GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10
+--> GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10 [32m200[0m 6s
+<-- GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10
+--> GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10 [32m200[0m 6s
+<-- GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
+--> GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10 [32m200[0m 3s
+--> GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10 [32m200[0m 3s
+--> GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10 [32m200[0m 3s
 --> GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10 [32m200[0m 4s
 --> GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10 [32m200[0m 4s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 5s
+<-- GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
+--> GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 773ms
+<-- POST /api/cart/checkout
+db0f1908-ecb2-4402-a166-9bebfd9acd66 addressID
+--> POST /api/cart/checkout [32m200[0m 3s
+<-- GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 3s
 <-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 14s
+--> GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC [32m200[0m 23s
+<-- GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10
+<-- GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10
+<-- GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10
+<-- GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10
+<-- GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10
+<-- GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10
+--> GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10 [32m200[0m 530ms
+<-- GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10
+--> GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10 [32m200[0m 1s
+<-- GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10
+--> GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10 [32m200[0m 2s
+<-- GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10
+--> GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10 [32m200[0m 2s
+<-- GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10
+--> GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10 [32m200[0m 3s
+--> GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10 [32m200[0m 4s
+--> GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10 [32m200[0m 4s
+--> GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10 [32m200[0m 4s
+--> GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10 [32m200[0m 4s
+--> GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10 [32m200[0m 4s
+<-- GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
+--> GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 731ms
+<-- POST /api/cart/checkout
+db0f1908-ecb2-4402-a166-9bebfd9acd66 addressID
+--> POST /api/cart/checkout [32m200[0m 4s
+<-- GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 3s
 <-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 15s
+--> GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC [32m200[0m 25s
+<-- GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10
+<-- GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10
+<-- GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10
+<-- GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10
+<-- GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10
+<-- GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10
+--> GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10 [32m200[0m 696ms
+<-- GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10
+--> GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10 [32m200[0m 1s
+<-- GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10
+--> GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10 [32m200[0m 2s
+<-- GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10
+--> GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10 [32m200[0m 3s
+<-- GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10
+--> GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10 [32m200[0m 4s
+--> GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10 [32m200[0m 4s
+--> GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10 [32m200[0m 4s
+--> GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10 [32m200[0m 5s
+--> GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10 [32m200[0m 5s
+--> GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10 [32m200[0m 5s
+<-- GET /api/order?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
+--> GET /api/order?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 1s
 <-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
-<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
+<-- GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
+--> GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 2s
+<-- GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
 --> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 2s
+--> GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 2s
+<-- POST /api/cart/checkout
+db0f1908-ecb2-4402-a166-9bebfd9acd66 addressID
+--> POST /api/cart/checkout [32m200[0m 6s
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 1s
 <-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
+<-- GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
+<-- GET /api/order?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
+--> GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 1s
+--> GET /api/order?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 3s
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 4s
+<-- GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
+--> GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 557ms
+<-- GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
+--> GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 640ms
+<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
+<-- GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC
 --> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 2s
+--> GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC [32m200[0m 24s
+<-- GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10
+<-- GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10
+<-- GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10
+<-- GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10
+<-- GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10
+<-- GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10
+--> GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10 [32m200[0m 714ms
+<-- GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10
+--> GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10 [32m200[0m 1s
+<-- GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10
+--> GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10 [32m200[0m 2s
+<-- GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10
+--> GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10 [32m200[0m 3s
+<-- GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10
+--> GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10 [32m200[0m 4s
+--> GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10 [32m200[0m 5s
+--> GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10 [32m200[0m 5s
+--> GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10 [32m200[0m 5s
+--> GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10 [32m200[0m 5s
+--> GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10 [32m200[0m 5s
+<-- GET /api/product/164e7924-43f0-4d35-980e-91dc8525018d
+--> GET /api/product/164e7924-43f0-4d35-980e-91dc8525018d [32m200[0m 2s
 <-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
 <-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
+<-- GET /api/product/82c2f116-e8ae-4348-966c-f9328576888d
+--> GET /api/product/82c2f116-e8ae-4348-966c-f9328576888d [32m200[0m 2s
+<-- POST /api/review
+--> POST /api/review [32m200[0m 783ms
+<-- GET /api/product/82c2f116-e8ae-4348-966c-f9328576888d
+<-- GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10
+<-- GET /api/auth/get-session
+--> GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10 [32m200[0m 2s
+--> GET /api/auth/get-session [32m200[0m 4s
 <-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
+--> GET /api/product/82c2f116-e8ae-4348-966c-f9328576888d [32m200[0m 4s
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 2s
+<-- POST /api/auth/sign-out
+--> POST /api/auth/sign-out [32m200[0m 906ms
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 2ms
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 1ms
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 2ms
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 3ms
+<-- POST /api/auth/request-password-reset
+[0m[31m=====ERROR=====
+ {
+  [0mstatusCode[2m:[0m [0m[33m403[0m[0m[2m,[0m
+  [0mmessage[2m:[0m [0m[32m[0m[32m"The buildin21.com domain is not verified. Please, add and verify your domain on https://resend.com/domains"[0m[0m[0m[2m,[0m
+  [0mname[2m:[0m [0m[32m[0m[32m"validation_error"[0m[0m[0m[2m,[0m
+}[0m
+--> POST /api/auth/request-password-reset [32m200[0m 10s
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 3ms
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 2ms
+<-- POST /api/auth/sign-in/email
+--> POST /api/auth/sign-in/email [33m403[0m 5s
+<-- POST /api/auth/sign-in/email
+--> POST /api/auth/sign-in/email [32m200[0m 3s
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 1s
+<-- GET /api/auth/get-session
+<-- GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC
+--> GET /api/auth/get-session [32m200[0m 2s
 <-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 5s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 5s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 6s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 6s
---> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 7s
-<-- GET /api/admin/category?_end=10&_start=0&
---> GET /api/admin/category?_end=10&_start=0& [32m200[0m 299ms
-<-- DELETE /api/admin/category/cbb6c5a2-0019-41bf-a8c5-97eef1f11794
---> DELETE /api/admin/category/cbb6c5a2-0019-41bf-a8c5-97eef1f11794 [32m200[0m 600ms
-<-- GET /api/admin/category?_end=10&_start=0&
---> GET /api/admin/category?_end=10&_start=0& [32m200[0m 365ms
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 9s
+--> GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC [32m200[0m 26s
+<-- GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10
+<-- GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10
+<-- GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10
+<-- GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10
+<-- GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10
+<-- GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10
+--> GET /api/review?productID=0f0e93ae-5243-4bc3-bb64-a7b3e86903bd&_start=0&_end=10 [32m200[0m 672ms
+<-- GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10
+--> GET /api/review?productID=95a1135a-9205-468b-b61e-3f4a714eb70f&_start=0&_end=10 [32m200[0m 1s
+<-- GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10
+--> GET /api/review?productID=82c2f116-e8ae-4348-966c-f9328576888d&_start=0&_end=10 [32m200[0m 2s
+<-- GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10
+--> GET /api/review?productID=d22ca97e-7b49-47d9-ba81-a989d7201908&_start=0&_end=10 [32m200[0m 3s
+<-- GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10
+--> GET /api/review?productID=3cbedd19-e220-4690-a37c-425beb4c43fb&_start=0&_end=10 [32m200[0m 3s
+--> GET /api/review?productID=164e7924-43f0-4d35-980e-91dc8525018d&_start=0&_end=10 [32m200[0m 4s
+--> GET /api/review?productID=0e7a91e3-eb69-4815-a97e-0422611e9d5b&_start=0&_end=10 [32m200[0m 4s
+--> GET /api/review?productID=0777f81e-4b73-46ca-9cca-4c0d64202125&_start=0&_end=10 [32m200[0m 4s
+--> GET /api/review?productID=a855b942-6b83-4565-872a-e81de7e083bb&_start=0&_end=10 [32m200[0m 5s
+--> GET /api/review?productID=d085bb74-4cce-4875-92f3-17bdec8ed18d&_start=0&_end=10 [32m200[0m 5s
+<-- DELETE /api/cart/xkd1opk7eonzhmje6tlz74te
+--> DELETE /api/cart/xkd1opk7eonzhmje6tlz74te [32m200[0m 1s
+<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
+<-- DELETE /api/cart/ukt7t1pmq6e3nnoxvqs0g1dx
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 2s
+--> DELETE /api/cart/ukt7t1pmq6e3nnoxvqs0g1dx [32m200[0m 2s
+<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
+<-- POST /api/cart
+<-- POST /api/cart
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 2s
+<-- GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
+--> GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 2s
+<-- GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
+--> POST /api/cart [32m200[0m 5s
+<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
+--> GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 2s
+--> POST /api/cart [32m200[0m 6s
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 3s
+<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 1s
+<-- POST /api/cart/checkout
+db0f1908-ecb2-4402-a166-9bebfd9acd66 addressID
+--> POST /api/cart/checkout [32m200[0m 6s
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 1s
+<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
+<-- GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
+--> GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 2s
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 2s
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 5s
+<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
+<-- GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 2s
+<-- GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
+--> GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 8s
+<-- GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
+--> GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 6s
+--> GET /api/product?_start=0&_end=12&sortBy=createdAt&orderBy=DESC [32m200[0m 23s
+<-- POST /api/cart/checkout
+db0f1908-ecb2-4402-a166-9bebfd9acd66 addressID
+[0m[31m💥 Error creating checkout session: [0m[1m41 |[0m  * Specifically [0m[35mfor[0m errors returned from Stripe[0m[32m's REST API.[0m
+[0m[1m42 |[0m  */
+[0m[1m43 |[0m [0m[35mexport[0m [0m[35mclass[0m StripeError [0m[35mextends[0m Error {
+[0m[1m44 |[0m     constructor(raw = {}, [0m[34mtype[0m = [0m[33mnull[0m) {
+[0m[1m45 |[0m         [0m[35mvar[0m _a[0m[2m;[0m
+[0m[1m46 |[0m         [0m[35msuper[0m(raw.message)[0m[2m;[0m
+             [31m[1m^[0m
+[0m[31merror[0m[2m:[0m [1mMissing required param: success_url.[0m
+       type[0m[2m:[0m [0m[32m"StripeInvalidRequestError"[0m[0m[2m,[0m
+        raw[0m[2m:[0m {
+  [0mcode[2m:[0m [0m[32m[0m[32m"parameter_missing"[0m[0m[0m[2m,[0m
+  [0mdoc_url[2m:[0m [0m[32m[0m[32m"https://stripe.com/docs/error-codes/parameter-missing"[0m[0m[0m[2m,[0m
+  [0mmessage[2m:[0m [0m[32m[0m[32m"Missing required param: success_url."[0m[0m[0m[2m,[0m
+  [0mparam[2m:[0m [0m[32m[0m[32m"success_url"[0m[0m[0m[2m,[0m
+  [0mrequest_log_url[2m:[0m [0m[32m[0m[32m"https://dashboard.stripe.com/test/logs/req_N6fic0H3ZYDC16?t=1767120882"[0m[0m[0m[2m,[0m
+  [0mtype[2m:[0m [0m[32m[0m[32m"invalid_request_error"[0m[0m[0m[2m,[0m
+  [0mheaders[2m:[0m [0m[36m[Object ...][0m[0m[2m,[0m
+  [0mstatusCode[2m:[0m [0m[33m400[0m[0m[2m,[0m
+  [0mrequestId[2m:[0m [0m[32m[0m[32m"req_N6fic0H3ZYDC16"[0m[0m[0m[2m,[0m
+}[0m[2m,[0m
+    rawType[0m[2m:[0m [0m[32m"invalid_request_error"[0m[0m[2m,[0m
+    doc_url[0m[2m:[0m [0m[32m"https://stripe.com/docs/error-codes/parameter-missing"[0m[0m[2m,[0m
+      param[0m[2m:[0m [0m[32m"success_url"[0m[0m[2m,[0m
+     detail[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+    headers[0m[2m:[0m {
+  [0m[32m"access-control-allow-credentials"[0m[2m:[0m [0m[32m[0m[32m"true"[0m[0m[0m[2m,[0m
+  [0m[32m"access-control-allow-methods"[0m[2m:[0m [0m[32m[0m[32m"GET, HEAD, PUT, PATCH, POST, DELETE"[0m[0m[0m[2m,[0m
+  [0m[32m"access-control-allow-origin"[0m[2m:[0m [0m[32m[0m[32m"*"[0m[0m[0m[2m,[0m
+  [0m[32m"access-control-expose-headers"[0m[2m:[0m [0m[32m[0m[32m"Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required"[0m[0m[0m[2m,[0m
+  [0m[32m"access-control-max-age"[0m[2m:[0m [0m[32m[0m[32m"300"[0m[0m[0m[2m,[0m
+  [0m[32m"cache-control"[0m[2m:[0m [0m[32m[0m[32m"no-cache, no-store"[0m[0m[0m[2m,[0m
+  [0mconnection[2m:[0m [0m[32m[0m[32m"keep-alive"[0m[0m[0m[2m,[0m
+  [0m[32m"content-length"[0m[2m:[0m [0m[32m[0m[32m"342"[0m[0m[0m[2m,[0m
+  [0m[32m"content-security-policy"[0m[2m:[0m [0m[32m[0m[32m"base-uri 'none'; default-src 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'; worker-src 'none'; upgrade-insecure-requests; report-uri https://q.stripe.com/csp-violation?q=mvwLU8dWpxdpdlF149MDPGab7AVc13kA1Gss2I4lP3GdniYe_NUzTBSOyYiFh_L4d14Juxe9EnXEKSE0"[0m[0m[0m[2m,[0m
+  [0m[32m"content-type"[0m[2m:[0m [0m[32m[0m[32m"application/json"[0m[0m[0m[2m,[0m
+  [0mdate[2m:[0m [0m[32m[0m[32m"Tue, 30 Dec 2025 18:54:42 GMT"[0m[0m[0m[2m,[0m
+  [0m[32m"idempotency-key"[0m[2m:[0m [0m[32m[0m[32m"stripe-node-retry-6a71174e-a0c9-4ab0-a400-697a7caf452d"[0m[0m[0m[2m,[0m
+  [0m[32m"original-request"[0m[2m:[0m [0m[32m[0m[32m"req_N6fic0H3ZYDC16"[0m[0m[0m[2m,[0m
+  [0m[32m"request-id"[0m[2m:[0m [0m[32m[0m[32m"req_N6fic0H3ZYDC16"[0m[0m[0m[2m,[0m
+  [0mserver[2m:[0m [0m[32m[0m[32m"nginx"[0m[0m[0m[2m,[0m
+  [0m[32m"strict-transport-security"[0m[2m:[0m [0m[32m[0m[32m"max-age=63072000; includeSubDomains; preload"[0m[0m[0m[2m,[0m
+  [0m[32m"stripe-should-retry"[0m[2m:[0m [0m[32m[0m[32m"false"[0m[0m[0m[2m,[0m
+  [0m[32m"stripe-version"[0m[2m:[0m [0m[32m[0m[32m"2025-08-27.basil"[0m[0m[0m[2m,[0m
+  [0mvary[2m:[0m [0m[32m[0m[32m"Origin"[0m[0m[0m[2m,[0m
+  [0m[32m"x-stripe-priority-routing-enabled"[0m[2m:[0m [0m[32m[0m[32m"true"[0m[0m[0m[2m,[0m
+  [0m[32m"x-stripe-routing-context-priority-tier"[0m[2m:[0m [0m[32m[0m[32m"api-testmode"[0m[0m[0m[2m,[0m
+  [0m[32m"x-wc"[0m[2m:[0m [0m[32m[0m[32m"ABGHIJ"[0m[0m[0m[2m,[0m
+}[0m[2m,[0m
+  requestId[0m[2m:[0m [0m[32m"req_N6fic0H3ZYDC16"[0m[0m[2m,[0m
+ statusCode[0m[2m:[0m [0m[33m400[0m[0m[2m,[0m
+ userMessage[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+     charge[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+ decline_code[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+ payment_intent[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+ payment_method[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+ payment_method_type[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+ setup_intent[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+     source[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+       code[0m[2m:[0m [32m"parameter_missing"[0m
+
+[0m      [2mat [0mnew StripeError[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/stripe/esm/Error.js[0m[2m:[0m[33m46[0m[2m:[33m9[0m[2m)[0m
+[0m      [2mat [0mnew StripeInvalidRequestError[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/stripe/esm/Error.js[0m[2m:[0m[33m88[0m[2m:[33m9[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mgenerateV1Error[0m[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/stripe/esm/Error.js[0m[2m:[0m[33m8[0m[2m:[33m20[0m[2m)[0m
+[0m      [2mat [0m[0m[2m<anonymous>[0m[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/stripe/esm/RequestSender.js[0m[2m:[0m[33m105[0m[2m:[33m31[0m[2m)[0m
+[0m
+--> POST /api/cart/checkout [31m500[0m 5s
+<-- POST /api/cart/checkout
+db0f1908-ecb2-4402-a166-9bebfd9acd66 addressID
+[0m[31m💥 Error creating checkout session: [0m[1m41 |[0m  * Specifically [0m[35mfor[0m errors returned from Stripe[0m[32m's REST API.[0m
+[0m[1m42 |[0m  */
+[0m[1m43 |[0m [0m[35mexport[0m [0m[35mclass[0m StripeError [0m[35mextends[0m Error {
+[0m[1m44 |[0m     constructor(raw = {}, [0m[34mtype[0m = [0m[33mnull[0m) {
+[0m[1m45 |[0m         [0m[35mvar[0m _a[0m[2m;[0m
+[0m[1m46 |[0m         [0m[35msuper[0m(raw.message)[0m[2m;[0m
+             [31m[1m^[0m
+[0m[31merror[0m[2m:[0m [1mMissing required param: success_url.[0m
+       type[0m[2m:[0m [0m[32m"StripeInvalidRequestError"[0m[0m[2m,[0m
+        raw[0m[2m:[0m {
+  [0mcode[2m:[0m [0m[32m[0m[32m"parameter_missing"[0m[0m[0m[2m,[0m
+  [0mdoc_url[2m:[0m [0m[32m[0m[32m"https://stripe.com/docs/error-codes/parameter-missing"[0m[0m[0m[2m,[0m
+  [0mmessage[2m:[0m [0m[32m[0m[32m"Missing required param: success_url."[0m[0m[0m[2m,[0m
+  [0mparam[2m:[0m [0m[32m[0m[32m"success_url"[0m[0m[0m[2m,[0m
+  [0mrequest_log_url[2m:[0m [0m[32m[0m[32m"https://dashboard.stripe.com/test/logs/req_g3YfzehWB2HyHz?t=1767120889"[0m[0m[0m[2m,[0m
+  [0mtype[2m:[0m [0m[32m[0m[32m"invalid_request_error"[0m[0m[0m[2m,[0m
+  [0mheaders[2m:[0m [0m[36m[Object ...][0m[0m[2m,[0m
+  [0mstatusCode[2m:[0m [0m[33m400[0m[0m[2m,[0m
+  [0mrequestId[2m:[0m [0m[32m[0m[32m"req_g3YfzehWB2HyHz"[0m[0m[0m[2m,[0m
+}[0m[2m,[0m
+    rawType[0m[2m:[0m [0m[32m"invalid_request_error"[0m[0m[2m,[0m
+    doc_url[0m[2m:[0m [0m[32m"https://stripe.com/docs/error-codes/parameter-missing"[0m[0m[2m,[0m
+      param[0m[2m:[0m [0m[32m"success_url"[0m[0m[2m,[0m
+     detail[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+    headers[0m[2m:[0m {
+  [0m[32m"access-control-allow-credentials"[0m[2m:[0m [0m[32m[0m[32m"true"[0m[0m[0m[2m,[0m
+  [0m[32m"access-control-allow-methods"[0m[2m:[0m [0m[32m[0m[32m"GET, HEAD, PUT, PATCH, POST, DELETE"[0m[0m[0m[2m,[0m
+  [0m[32m"access-control-allow-origin"[0m[2m:[0m [0m[32m[0m[32m"*"[0m[0m[0m[2m,[0m
+  [0m[32m"access-control-expose-headers"[0m[2m:[0m [0m[32m[0m[32m"Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required, X-Stripe-Privileged-Session-Required"[0m[0m[0m[2m,[0m
+  [0m[32m"access-control-max-age"[0m[2m:[0m [0m[32m[0m[32m"300"[0m[0m[0m[2m,[0m
+  [0m[32m"cache-control"[0m[2m:[0m [0m[32m[0m[32m"no-cache, no-store"[0m[0m[0m[2m,[0m
+  [0mconnection[2m:[0m [0m[32m[0m[32m"keep-alive"[0m[0m[0m[2m,[0m
+  [0m[32m"content-length"[0m[2m:[0m [0m[32m[0m[32m"342"[0m[0m[0m[2m,[0m
+  [0m[32m"content-security-policy"[0m[2m:[0m [0m[32m[0m[32m"base-uri 'none'; default-src 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'; worker-src 'none'; upgrade-insecure-requests; report-uri https://q.stripe.com/csp-violation?q=mvwLU8dWpxdpdlF149MDPGab7AVc13kA1Gss2I4lP3GdniYe_NUzTBSOyYiFh_L4d14Juxe9EnXEKSE0"[0m[0m[0m[2m,[0m
+  [0m[32m"content-type"[0m[2m:[0m [0m[32m[0m[32m"application/json"[0m[0m[0m[2m,[0m
+  [0mdate[2m:[0m [0m[32m[0m[32m"Tue, 30 Dec 2025 18:54:49 GMT"[0m[0m[0m[2m,[0m
+  [0m[32m"idempotency-key"[0m[2m:[0m [0m[32m[0m[32m"stripe-node-retry-ef11873c-e736-402a-b44f-99c12c08428c"[0m[0m[0m[2m,[0m
+  [0m[32m"original-request"[0m[2m:[0m [0m[32m[0m[32m"req_g3YfzehWB2HyHz"[0m[0m[0m[2m,[0m
+  [0m[32m"request-id"[0m[2m:[0m [0m[32m[0m[32m"req_g3YfzehWB2HyHz"[0m[0m[0m[2m,[0m
+  [0mserver[2m:[0m [0m[32m[0m[32m"nginx"[0m[0m[0m[2m,[0m
+  [0m[32m"strict-transport-security"[0m[2m:[0m [0m[32m[0m[32m"max-age=63072000; includeSubDomains; preload"[0m[0m[0m[2m,[0m
+  [0m[32m"stripe-should-retry"[0m[2m:[0m [0m[32m[0m[32m"false"[0m[0m[0m[2m,[0m
+  [0m[32m"stripe-version"[0m[2m:[0m [0m[32m[0m[32m"2025-08-27.basil"[0m[0m[0m[2m,[0m
+  [0mvary[2m:[0m [0m[32m[0m[32m"Origin"[0m[0m[0m[2m,[0m
+  [0m[32m"x-stripe-priority-routing-enabled"[0m[2m:[0m [0m[32m[0m[32m"true"[0m[0m[0m[2m,[0m
+  [0m[32m"x-stripe-routing-context-priority-tier"[0m[2m:[0m [0m[32m[0m[32m"api-testmode"[0m[0m[0m[2m,[0m
+  [0m[32m"x-wc"[0m[2m:[0m [0m[32m[0m[32m"ABGHIJ"[0m[0m[0m[2m,[0m
+}[0m[2m,[0m
+  requestId[0m[2m:[0m [0m[32m"req_g3YfzehWB2HyHz"[0m[0m[2m,[0m
+ statusCode[0m[2m:[0m [0m[33m400[0m[0m[2m,[0m
+ userMessage[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+     charge[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+ decline_code[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+ payment_intent[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+ payment_method[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+ payment_method_type[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+ setup_intent[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+     source[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+       code[0m[2m:[0m [32m"parameter_missing"[0m
+
+[0m      [2mat [0mnew StripeError[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/stripe/esm/Error.js[0m[2m:[0m[33m46[0m[2m:[33m9[0m[2m)[0m
+[0m      [2mat [0mnew StripeInvalidRequestError[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/stripe/esm/Error.js[0m[2m:[0m[33m88[0m[2m:[33m9[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mgenerateV1Error[0m[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/stripe/esm/Error.js[0m[2m:[0m[33m8[0m[2m:[33m20[0m[2m)[0m
+[0m      [2mat [0m[0m[2m<anonymous>[0m[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/stripe/esm/RequestSender.js[0m[2m:[0m[33m105[0m[2m:[33m31[0m[2m)[0m
+[0m
+--> POST /api/cart/checkout [31m500[0m 5s
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+[0m[1m18 |[0m   CORS_WHITELIST: process.env.CORS_WHITELIST ?? [0m[32m"*"[0m,
+[0m[1m19 |[0m   SUPABASE_URL: process.env.SUPABASE_URL ?? [0m[32m""[0m,
+[0m[1m20 |[0m   SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY ?? [0m[32m""[0m,
+[0m[1m21 |[0m   SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY ?? [0m[32m""[0m,
+[0m[1m22 |[0m   STR
+[0m[1m23 |[0m })[0m[2m;[0m
+      [31m[1m^[0m
+[0m[31mReferenceError[0m[2m:[0m [1mSTR is not defined[0m
+[0m      [2mat [0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/src/utils/env.ts[0m[2m:[0m[33m23[0m[2m:[33m2[0m
+[0m      [2mat [0m[0m[1m[3mloadAndEvaluateModule[0m[2m ([0m[0m[36m[0m[33m2[0m[2m:[33m1[0m[2m)[0m
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+[0m[1m18 |[0m   CORS_WHITELIST: process.env.CORS_WHITELIST ?? [0m[32m"*"[0m,
+[0m[1m19 |[0m   SUPABASE_URL: process.env.SUPABASE_URL ?? [0m[32m""[0m,
+[0m[1m20 |[0m   SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY ?? [0m[32m""[0m,
+[0m[1m21 |[0m   SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY ?? [0m[32m""[0m,
+[0m[1m22 |[0m   STRIPE
+[0m[1m23 |[0m })[0m[2m;[0m
+      [31m[1m^[0m
+[0m[31mReferenceError[0m[2m:[0m [1mSTRIPE is not defined[0m
+[0m      [2mat [0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/src/utils/env.ts[0m[2m:[0m[33m23[0m[2m:[33m2[0m
+[0m      [2mat [0m[0m[1m[3mloadAndEvaluateModule[0m[2m ([0m[0m[36m[0m[33m2[0m[2m:[33m1[0m[2m)[0m
+[2J[3J[H[2J[3J[H[1m23 | [0m})[0m[2m;[0m
+     [1m[31m[1m^[0m
+[31merror[0m[2m: [0m[1mUnexpected }[0m
+    [2mat [0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/src/utils/env.ts[0m[2m:[0m[33m23[0m[2m:[0m[33m1[0m
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[H[1m23 | [0m})[0m[2m;[0m
+     [1m[31m[1m^[0m
+[31merror[0m[2m: [0m[1mExpected identifier but found "}"[0m
+    [2mat [0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/src/utils/env.ts[0m[2m:[0m[33m23[0m[2m:[0m[33m1[0m
+
+[1m23 | [0m})[0m[2m;[0m
+       [1m[31m[1m^[0m
+[31merror[0m[2m: [0m[1mExpected "}" but found ";"[0m
+    [2mat [0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/src/utils/env.ts[0m[2m:[0m[33m23[0m[2m:[0m[33m3[0m
+
+[1m23 | [0m})[0m[2m;[0m
+        [1m[31m[1m^[0m
+[31merror[0m[2m: [0m[1mExpected ")" but found end of file[0m
+    [2mat [0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/src/utils/env.ts[0m[2m:[0m[33m23[0m[2m:[0m[33m4[0m
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+ [0m[1m8 |[0m   SUPABASE_URL: z[0m[3m[1m.string[0m(),
+ [0m[1m9 |[0m   SUPABASE_ANON_KEY: z[0m[3m[1m.string[0m(),
+[0m[1m10 |[0m   SUPABASE_SERVICE_ROLE_KEY: z[0m[3m[1m.string[0m(),
+[0m[1m11 |[0m   STRIPE_SUCCESS_URL: z[0m[3m[1m.string[0m(),
+[0m[1m12 |[0m   STRIPE_CANCEL
+[0m[1m13 |[0m })[0m[2m;[0m
+      [31m[1m^[0m
+[0m[31mReferenceError[0m[2m:[0m [1mSTRIPE_CANCEL is not defined[0m
+[0m      [2mat [0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/src/utils/env.ts[0m[2m:[0m[33m13[0m[2m:[33m2[0m
+[0m      [2mat [0m[0m[1m[3mloadAndEvaluateModule[0m[2m ([0m[0m[36m[0m[33m2[0m[2m:[33m1[0m[2m)[0m
+[2J[3J[H[2J[3J[H[1m12 | [0m  STRIPE_CANCEL_URL: z[0m[3m[1m.string[0m(*)
+                                   [1m[31m[1m^[0m
+[31merror[0m[2m: [0m[1mUnexpected *[0m
+    [2mat [0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/src/utils/env.ts[0m[2m:[0m[33m12[0m[2m:[0m[33m31[0m
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+[0m[1m24 |[0m [0m[35mexport[0m [0m[35mclass[0m ZodError [0m[35mextends[0m Error {
+[0m[1m25 |[0m     get errors() {
+[0m[1m26 |[0m         [0m[35mreturn[0m [0m[33mthis[0m.issues[0m[2m;[0m
+[0m[1m27 |[0m     }
+[0m[1m28 |[0m     constructor(issues) {
+[0m[1m29 |[0m         [0m[35msuper[0m()[0m[2m;[0m
+             [31m[1m^[0m
+[0m[31mZodError[0m[2m:[0m [1m[
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "STRIPE_CANCEL_URL"
+    ],
+    "message": "Required"
+  }
+][0m
+    issues[0m[2m:[0m [
+  [0m[36m[Object ...][0m
+][0m[2m,[0m
+  addIssue[0m[2m:[0m [36m[Function][0m[0m[2m,[0m
+ addIssues[0m[2m:[0m [36m[Function][0m[0m[2m,[0m
+
+[0m      [2mat [0mnew ZodError[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/ZodError.js[0m[2m:[0m[33m29[0m[2m:[33m9[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3merror[0m[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/types.js[0m[2m:[0m[33m39[0m[2m:[33m31[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mparse[0m[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/types.js[0m[2m:[0m[33m114[0m[2m:[33m15[0m[2m)[0m
+[0m      [2mat [0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/src/utils/env.ts[0m[2m:[0m[33m16[0m[2m:[33m35[0m
+[0m      [2mat [0m[0m[1m[3mloadAndEvaluateModule[0m[2m ([0m[0m[36m[0m[33m2[0m[2m:[33m1[0m[2m)[0m
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+[0m[1m21 |[0m   SUPABASE_URL: process.env.SUPABASE_URL ?? [0m[32m""[0m,
+[0m[1m22 |[0m   SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY ?? [0m[32m""[0m,
+[0m[1m23 |[0m   SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY ?? [0m[32m""[0m,
+[0m[1m24 |[0m   STRIPE_SUCCESS_URL: process.env.STRIPE_SUCCESS_URL ?? [0m[32m""[0m,
+[0m[1m25 |[0m   STRI
+[0m[1m26 |[0m })[0m[2m;[0m
+      [31m[1m^[0m
+[0m[31mReferenceError[0m[2m:[0m [1mSTRI is not defined[0m
+[0m      [2mat [0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/src/utils/env.ts[0m[2m:[0m[33m26[0m[2m:[33m2[0m
+[0m      [2mat [0m[0m[1m[3mloadAndEvaluateModule[0m[2m ([0m[0m[36m[0m[33m2[0m[2m:[33m1[0m[2m)[0m
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+[0m[1m21 |[0m   SUPABASE_URL: process.env.SUPABASE_URL ?? [0m[32m""[0m,
+[0m[1m22 |[0m   SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY ?? [0m[32m""[0m,
+[0m[1m23 |[0m   SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY ?? [0m[32m""[0m,
+[0m[1m24 |[0m   STRIPE_SUCCESS_URL: process.env.STRIPE_SUCCESS_URL ?? [0m[32m""[0m,
+[0m[1m25 |[0m   STRIPE_CANC
+[0m[1m26 |[0m })[0m[2m;[0m
+      [31m[1m^[0m
+[0m[31mReferenceError[0m[2m:[0m [1mSTRIPE_CANC is not defined[0m
+[0m      [2mat [0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/src/utils/env.ts[0m[2m:[0m[33m26[0m[2m:[33m2[0m
+[0m      [2mat [0m[0m[1m[3mloadAndEvaluateModule[0m[2m ([0m[0m[36m[0m[33m2[0m[2m:[33m1[0m[2m)[0m
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+[0m[1m24 |[0m [0m[35mexport[0m [0m[35mclass[0m ZodError [0m[35mextends[0m Error {
+[0m[1m25 |[0m     get errors() {
+[0m[1m26 |[0m         [0m[35mreturn[0m [0m[33mthis[0m.issues[0m[2m;[0m
+[0m[1m27 |[0m     }
+[0m[1m28 |[0m     constructor(issues) {
+[0m[1m29 |[0m         [0m[35msuper[0m()[0m[2m;[0m
+             [31m[1m^[0m
+[0m[31mZodError[0m[2m:[0m [1m[
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "STRIPE_CANCEL_URL"
+    ],
+    "message": "Required"
+  }
+][0m
+    issues[0m[2m:[0m [
+  [0m[36m[Object ...][0m
+][0m[2m,[0m
+  addIssue[0m[2m:[0m [36m[Function][0m[0m[2m,[0m
+ addIssues[0m[2m:[0m [36m[Function][0m[0m[2m,[0m
+
+[0m      [2mat [0mnew ZodError[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/ZodError.js[0m[2m:[0m[33m29[0m[2m:[33m9[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3merror[0m[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/types.js[0m[2m:[0m[33m39[0m[2m:[33m31[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mparse[0m[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/.pnpm/zod@3.25.76/node_modules/zod/v3/types.js[0m[2m:[0m[33m114[0m[2m:[33m15[0m[2m)[0m
+[0m      [2mat [0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/src/utils/env.ts[0m[2m:[0m[33m16[0m[2m:[33m35[0m
+[0m      [2mat [0m[0m[1m[3mloadAndEvaluateModule[0m[2m ([0m[0m[36m[0m[33m2[0m[2m:[33m1[0m[2m)[0m
+[2J[3J[H[2J[3J[H[1m26 | [0m})[0m[2m;[0m
+     [1m[31m[1m^[0m
+[31merror[0m[2m: [0m[1mUnexpected }[0m
+    [2mat [0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/src/utils/env.ts[0m[2m:[0m[33m26[0m[2m:[0m[33m1[0m
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+[2J[3J[H[2J[3J[HFailed to find Response internal state key
+Server running on port 5000
+<-- POST /api/cart/checkout
+db0f1908-ecb2-4402-a166-9bebfd9acd66 addressID
+--> POST /api/cart/checkout [32m200[0m 26s
+<-- GET /api/auth/get-session
+[0m[33mTimeoutNegativeWarning[0m[2m:[0m [1m-4068041.6351565425 is a negative number.
+Timeout duration was set to 1.[0m
+[0m      [2mat [0m[0m[1m[3mreconnect[0m[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/.pnpm/postgres@3.4.7/node_modules/postgres/src/connection.js[0m[2m:[0m[33m353[0m[2m:[33m5[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mconnect[0m[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/.pnpm/postgres@3.4.7/node_modules/postgres/src/connection.js[0m[2m:[0m[33m113[0m[2m:[33m7[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mconnect[0m[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/.pnpm/postgres@3.4.7/node_modules/postgres/src/index.js[0m[2m:[0m[33m393[0m[2m:[33m7[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mhandle[0m[2m ([0m[0m[36m/home/benoni/Desktop/projects/sample_project/apps/backend/node_modules/.pnpm/postgres@3.4.7/node_modules/postgres/src/query.js[0m[2m:[0m[33m140[0m[2m:[33m65[0m[2m)[0m
+
+--> GET /api/auth/get-session [32m200[0m 6s
+<-- GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100
+<-- GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb
+--> GET /api/address?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb [32m200[0m 1s
+--> GET /api/cart?userID=QoPFWbBtlEQoZkqOKQmWDFxt5EWWhHSb&page=1&limit=100 [32m200[0m 2s
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 2s
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 2s
+<-- GET /api/auth/get-session
 <-- GET /api/admin/product?_end=10&_start=0&
 <-- GET /api/admin/category?&
---> GET /api/admin/product?_end=10&_start=0& [32m200[0m 576ms
---> GET /api/admin/category?& [32m200[0m 859ms
+--> GET /api/admin/product?_end=10&_start=0& [32m200[0m 3s
+--> GET /api/admin/category?& [32m200[0m 5s
+--> GET /api/auth/get-session [32m200[0m 5s
+<-- POST /api/auth/sign-out
+--> POST /api/auth/sign-out [32m200[0m 1s
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 1ms
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 2ms
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 2ms
+<-- POST /api/auth/sign-in/email
+--> POST /api/auth/sign-in/email [32m200[0m 2s
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 2s
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 2s
+<-- GET /api/auth/get-session
+--> GET /api/auth/get-session [32m200[0m 1s
+<-- GET /api/auth/get-session
+<-- GET /api/admin/product?_end=10&_start=0&
+<-- GET /api/admin/category?&
+--> GET /api/admin/product?_end=10&_start=0& [32m200[0m 1s
+--> GET /api/admin/category?& [32m200[0m 1s
+--> GET /api/auth/get-session [32m200[0m 2s
+<-- GET /api/admin/category?&
+--> GET /api/admin/category?& [32m200[0m 258ms
+<-- POST /api/upload/presigned_url
+--> POST /api/upload/presigned_url [32m200[0m 5s
+<-- POST /api/admin/product
+==========Product inventory response==========
+ []
+==========Product category response==========
+ []
+==========Product image response==========
+ []
+--> POST /api/admin/product [32m200[0m 5s
+<-- GET /api/admin/product?_end=10&_start=0&
+<-- GET /api/admin/category?&
+--> GET /api/admin/product?_end=10&_start=0& [32m200[0m 3s
+--> GET /api/admin/category?& [32m200[0m 3s

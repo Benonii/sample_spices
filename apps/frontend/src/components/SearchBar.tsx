@@ -29,14 +29,14 @@ export function SearchBar({ onSearch, placeholder = "Search products...", classN
 
   return (
     <div className={cn("relative", className)}>
-      <div className="relative">
-        <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5" color="#008000" />
+      <div className="relative group">
+        <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-orange-600 dark:text-orange-400 transition-transform duration-300 group-focus-within:scale-110" />
         <Input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder={placeholder}
-          className="pl-12 pr-12 py-4 h-12 text-base w-full focus:ring-ring focus:border-ring border shadow-sm"
+          className="pl-12 pr-12 py-4 h-14 text-base w-full glass dark:glass-dark border-2 border-orange-200/50 dark:border-orange-500/30 rounded-2xl focus:ring-0 focus:border-orange-500 dark:focus:border-orange-400 focus:shadow-lg focus:shadow-orange-500/20 dark:focus:shadow-orange-400/20 transition-all duration-300 placeholder:text-muted-foreground"
         />
         {query && (
           <Button
@@ -44,9 +44,9 @@ export function SearchBar({ onSearch, placeholder = "Search products...", classN
             onClick={handleClear}
             variant="ghost"
             size="sm"
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 h-8 w-8 p-0 hover:bg-muted"
+            className="absolute right-2 top-1/2 transform -translate-y-1/2 h-10 w-10 p-0 hover:bg-orange-100/50 dark:hover:bg-orange-900/30 rounded-xl transition-all duration-300 hover:scale-110"
           >
-            <X className="w-4 h-4" />
+            <X className="w-4 h-4 text-orange-600 dark:text-orange-400" />
           </Button>
         )}
       </div>
