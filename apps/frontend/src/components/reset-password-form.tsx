@@ -79,16 +79,16 @@ export function ResetPasswordForm({
   if (!token) {
     return (
       <div className={cn("flex flex-col gap-6", className)} {...props}>
-        <Card className="w-full max-w-md mx-auto">
-          <CardHeader className="text-center">
-            <CardTitle className="text-xl">Invalid Reset Link</CardTitle>
-            <CardDescription>
+        <Card className="w-full max-w-md mx-auto glass-card dark:glass-card-dark border-orange-200/50 dark:border-orange-500/20 shadow-2xl">
+          <CardHeader className="text-center space-y-3">
+            <CardTitle className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Invalid Reset Link</CardTitle>
+            <CardDescription className="text-base">
               This password reset link is invalid or has expired. Please request a new one.
             </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="grid gap-6">
-              <Button asChild className="w-full">
+              <Button asChild className="w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <Link to="/login">
                   Back to login
                 </Link>
@@ -103,16 +103,16 @@ export function ResetPasswordForm({
   if (isPasswordReset) {
     return (
       <div className={cn("flex flex-col gap-6", className)} {...props}>
-        <Card className="w-full max-w-md mx-auto">
-          <CardHeader className="text-center">
-            <CardTitle className="text-xl">Password reset successful</CardTitle>
-            <CardDescription>
+        <Card className="w-full max-w-md mx-auto glass-card dark:glass-card-dark border-orange-200/50 dark:border-orange-500/20 shadow-2xl">
+          <CardHeader className="text-center space-y-3">
+            <CardTitle className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Password reset successful</CardTitle>
+            <CardDescription className="text-base">
               Your password has been successfully updated. You can now log in with your new password.
             </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="grid gap-6">
-              <Button asChild className="w-full">
+              <Button asChild className="w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <Link to="/login">
                   Continue to login
                 </Link>
@@ -126,10 +126,10 @@ export function ResetPasswordForm({
 
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
-      <Card className="w-full max-w-md mx-auto">
-        <CardHeader className="text-center">
-          <CardTitle className="text-xl">Set new password</CardTitle>
-          <CardDescription>
+      <Card className="w-full max-w-md mx-auto glass-card dark:glass-card-dark border-orange-200/50 dark:border-orange-500/20 shadow-2xl">
+        <CardHeader className="text-center space-y-3">
+          <CardTitle className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Set new password</CardTitle>
+          <CardDescription className="text-base">
             Enter your new password below
           </CardDescription>
         </CardHeader>
@@ -137,43 +137,49 @@ export function ResetPasswordForm({
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="grid gap-6">
               <div className="grid gap-3">
-                <Label htmlFor="newPassword">New Password</Label>
+                <Label htmlFor="newPassword" className="text-foreground/80">New Password</Label>
                 <Input
                   id="newPassword"
                   type="password"
                   placeholder="Enter new password"
                   {...register("newPassword")}
+                  className="border-orange-200/50 dark:border-orange-500/30 focus:border-orange-500 dark:focus:border-orange-400 focus:ring-orange-500/20 transition-all duration-300"
                   required
                 />
                 {errors.newPassword && (
-                  <p className="text-sm text-red-500">{errors.newPassword.message}</p>
+                  <p className="text-sm text-red-500 dark:text-red-400">{errors.newPassword.message}</p>
                 )}
               </div>
               <div className="grid gap-3">
-                <Label htmlFor="confirmPassword">Confirm New Password</Label>
+                <Label htmlFor="confirmPassword" className="text-foreground/80">Confirm New Password</Label>
                 <Input
                   id="confirmPassword"
                   type="password"
                   placeholder="Confirm new password"
                   {...register("confirmPassword")}
+                  className="border-orange-200/50 dark:border-orange-500/30 focus:border-orange-500 dark:focus:border-orange-400 focus:ring-orange-500/20 transition-all duration-300"
                   required
                 />
                 {errors.confirmPassword && (
-                  <p className="text-sm text-red-500">{errors.confirmPassword.message}</p>
+                  <p className="text-sm text-red-500 dark:text-red-400">{errors.confirmPassword.message}</p>
                 )}
                 {confirmPassword && newPassword && confirmPassword !== newPassword && (
-                  <p className="text-sm text-red-500">Passwords do not match</p>
+                  <p className="text-sm text-red-500 dark:text-red-400">Passwords do not match</p>
                 )}
                 {confirmPassword && newPassword && confirmPassword === newPassword && (
-                  <p className="text-sm text-orange-600">Passwords match</p>
+                  <p className="text-sm text-orange-600 dark:text-orange-400">Passwords match</p>
                 )}
               </div>
-              <Button type="submit" className="w-full" disabled={isPending}>
+              <Button
+                type="submit"
+                className="w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                disabled={isPending}
+              >
                 {isPending ? "Updating..." : "Update password"}
               </Button>
-              <div className="text-center text-sm">
+              <div className="text-center text-sm text-muted-foreground">
                 Remember your password?{" "}
-                <Link to="/login" className="underline underline-offset-4">
+                <Link to="/login" className="text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 underline underline-offset-4 font-medium transition-colors">
                   Back to login
                 </Link>
               </div>
@@ -181,9 +187,9 @@ export function ResetPasswordForm({
           </form>
         </CardContent>
       </Card>
-      <div className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4">
-        By clicking continue, you agree to our <a href="#">Terms of Service</a>{" "}
-        and <a href="#">Privacy Policy</a>.
+      <div className="text-muted-foreground text-center text-xs text-balance">
+        By clicking continue, you agree to our <a href="#" className="text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 underline underline-offset-4 transition-colors">Terms of Service</a>{" "}
+        and <a href="#" className="text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 underline underline-offset-4 transition-colors">Privacy Policy</a>.
       </div>
     </div>
   );
