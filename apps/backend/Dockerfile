@@ -1,11 +1,14 @@
-FROM oven/bun:1 AS base
+FROM node:20-slim AS base
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
 WORKDIR /app
 
 # Copy all files
 COPY . .
 
 # Install dependencies
-RUN bun install
+RUN pnpm install
 
 # Set working directory to backend
 WORKDIR /app/apps/backend
@@ -14,4 +17,4 @@ WORKDIR /app/apps/backend
 EXPOSE 5000
 
 # Start the application
-CMD ["bun", "run", "start"]
+CMD ["pnpm", "run", "start"]

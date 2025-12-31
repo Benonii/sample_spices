@@ -16,11 +16,7 @@
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "bun@1.2.12",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "packageManager": "pnpm@9.0.0",
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
     "react-hook-form": "^7.65.0",

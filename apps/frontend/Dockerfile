@@ -1,16 +1,19 @@
 # Build stage
-FROM oven/bun:1 AS builder
+FROM node:20-slim AS builder
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
 WORKDIR /app
 
 # Copy all files
 COPY . .
 
 # Install dependencies
-RUN bun install
+RUN pnpm install
 
 # Build the frontend
 # Assuming the build script in root package.json or using turbo
-RUN bun run build --filter=frontend
+RUN pnpm run build --filter=frontend
 
 # Production stage
 FROM nginx:alpine
