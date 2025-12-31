@@ -23,22 +23,21 @@ export const ProductList = () => {
   return (
     <List>
       <Table {...tableProps} rowKey="id">
-        <Table.Column dataIndex="id" title={"ID"} width={80} />
-        <Table.Column 
-          dataIndex="name" 
-          title={"Name"} 
+        <Table.Column
+          dataIndex="name"
+          title={"Name"}
           width={200}
           render={(value) => <strong>{value}</strong>}
         />
-        <Table.Column 
-          dataIndex="price" 
-          title={"Price"} 
+        <Table.Column
+          dataIndex="price"
+          title={"Price"}
           width={100}
           render={(value) => `$${(value ?? 0).toFixed(2)}`}
         />
-        <Table.Column 
-          dataIndex="inventory" 
-          title={"Inventory"} 
+        <Table.Column
+          dataIndex="inventory"
+          title={"Inventory"}
           width={100}
           render={(value) => (
             <Tag color={(value ?? 0) > 10 ? 'green' : (value ?? 0) > 0 ? 'orange' : 'red'}>
@@ -46,32 +45,32 @@ export const ProductList = () => {
             </Tag>
           )}
         />
-        <Table.Column 
-          dataIndex="status" 
-          title={"Status"} 
+        <Table.Column
+          dataIndex="status"
+          title={"Status"}
           width={120}
           render={(value) => (
             <Tag color={
-              value === 'ACTIVE' ? 'green' : 
-              value === 'INACTIVE' ? 'orange' : 
-              value === 'ARCHIVED' ? 'red' : 'default'
+              value === 'ACTIVE' ? 'green' :
+                value === 'INACTIVE' ? 'orange' :
+                  value === 'ARCHIVED' ? 'red' : 'default'
             }>
               {value ?? 'ACTIVE'}
             </Tag>
           )}
         />
-        <Table.Column 
-          dataIndex="category" 
-          title={"Category"} 
+        <Table.Column
+          dataIndex="category"
+          title={"Category"}
           width={120}
           render={(value) => {
             const category = categorySelectProps.options?.find(opt => opt.value === value);
             return category?.label || value || 'N/A';
           }}
         />
-        <Table.Column 
-          dataIndex="images" 
-          title={"Images"} 
+        <Table.Column
+          dataIndex="images"
+          title={"Images"}
           width={100}
           render={(images) => {
             if (!images || images.length === 0) return 'No images';
