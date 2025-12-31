@@ -9,7 +9,7 @@ const EnvSchema = z.object({
   SUPABASE_ANON_KEY: z.string(),
   SUPABASE_SERVICE_ROLE_KEY: z.string(),
   STRIPE_SUCCESS_URL: z.string(),
-  STRIPE_CANCEL_URL: z.string()
+  STRIPE_CANCEL_URL: z.string(),
 });
 
 type Env = z.infer<typeof EnvSchema>;
