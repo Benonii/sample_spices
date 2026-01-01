@@ -27,7 +27,7 @@ export const auth = betterAuth({
       await sendResetPassword({ user, url, token })
     },
   },
-  trustedOrigins: [ "http://localhost:5173" ],
+  trustedOrigins: [ "http://localhost:5173", "https://spices.buildin21.com", "https://spices-api.buildin21.com" ],
   socialProviders: {
     google: {
       clientId: process.env.GOOGLE_CLIENT_ID as string,
