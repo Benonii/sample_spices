@@ -37,8 +37,8 @@ export const createCheckoutSession = async ({
             productIDs: products.map(product => product.id).join(','),
             addressID
         },
-        success_url: `https://benoni.work`,
-        cancel_url: `https://benoniw.work`,
+        success_url: process.env.STRIPE_SUCCESS_URL,
+        cancel_url: process.env.STRIPE_CANCEL_URL,
     });
     return session;
 }

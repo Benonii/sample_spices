@@ -5,8 +5,8 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "dev": "tsx watch run src/index.ts",
-    "start": "tsx src/index.ts",
+    "dev": "bun --watch src/index.ts",
+    "start": "bun run src/index.ts",
     "drizzle:sync": "drizzle-kit generate && drizzle-kit migrate"
   },
   "devDependencies": {
