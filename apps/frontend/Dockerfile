@@ -5,11 +5,15 @@ ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable
 WORKDIR /app
 
+
 # Copy all files
 COPY . .
 
 # Install dependencies
 RUN pnpm install
+
+ARG VITE_API_URL
+ENV VITE_API_URL=$VITE_API_URL
 
 # Build the frontend
 # Assuming the build script in root package.json or using turbo
