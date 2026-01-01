@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "./driptech.png"
+const Logo = new URL('./driptech.png', import.meta.url).pathname;
 
 type ResetPasswordEmailProps = {
   name?: string;
