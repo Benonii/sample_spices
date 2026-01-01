@@ -23,11 +23,11 @@ export const auth = betterAuth({
   emailAndPassword: {
     enabled: true,
     requireEmailVerification: true,
-    sendResetPassword: async ({ user, url, token }, request) => {
+    sendResetPassword: async ({user, url, token}, request) => {
       await sendResetPassword({ user, url, token })
     },
   },
-  trustedOrigins: ["http://localhost:5173", "http://localhost:5174"],
+  trustedOrigins: [ "http://localhost:5173" ],
   socialProviders: {
     google: {
       clientId: process.env.GOOGLE_CLIENT_ID as string,
@@ -50,14 +50,14 @@ export const auth = betterAuth({
           const addressID = session.metadata?.addressID;
           const userID = session.metadata?.userID
           const productIDs = session.metadata?.productIDs?.split(',') || [];
-
+          
           // Get line items with quantities from Stripe session
           const lineItems = await stripeClient.checkout.sessions.listLineItems(session.id);
-
+          
           if (productIDs.length > 0 && addressID && lineItems.data.length > 0) {
             try {
               console.log(`Checkout completed for customer ${customerEmail}, amount ${amount}, products: ${productIDs.join(', ')}`);
-
+              
               // Create an order for each product with its quantity from line items
               const orderPromises = productIDs.map(async (productID: string, index: number) => {
                 const lineItem = lineItems.data[index];
@@ -74,7 +74,7 @@ export const auth = betterAuth({
                 });
                 return order;
               });
-
+              
               await Promise.all(orderPromises);
               await deactivateUserCartItems(userID);
               console.log(`userID: ${userID} cart items deactivated`);

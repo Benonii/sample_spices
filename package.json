@@ -1,6 +1,12 @@
 {
-  "name": "starter-template",
+  "name": "sample-spices",
   "private": true,
+  "workspaces": ["apps/*"],
+  "pnpm": {
+    "ovrrides": {
+      "drizzle-orm": "0.45.1"
+    }
+  },
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",

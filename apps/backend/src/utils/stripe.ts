@@ -1,5 +1,4 @@
 import Stripe from "stripe";
-import { env } from "./env";
 
 export const stripeClient = new Stripe(process.env.STRIPE_SECRET_KEY!, {
     apiVersion: "2025-08-27.basil",
@@ -38,8 +37,8 @@ export const createCheckoutSession = async ({
             productIDs: products.map(product => product.id).join(','),
             addressID
         },
-        success_url: env.STRIPE_SUCCESS_URL!,
-        cancel_url: env.STRIPE_CANCEL_URL!,
+        success_url: `https://benoni.work`,
+        cancel_url: `https://benoniw.work`,
     });
     return session;
 }

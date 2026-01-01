@@ -48,6 +48,7 @@ export const getProductList = async ({
         .where(
             and(
                 q ? eq(productTable.name, q) : undefined,
+                eq(productTable.status, "ACTIVE"),
                 categoryID ? inArray(productCategoryRelation.categoryID, [categoryID]) : undefined,
                 isNull(productTable.deletedAt)
             )
